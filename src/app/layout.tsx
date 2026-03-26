@@ -23,8 +23,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: Readonly<{ children: ReactNode; }>) {
     return (
-        <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-        <body className="">
+        <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <body className="font-sans">
         <Script src="https://kit.fontawesome.com/aaef8f0e02.js" crossOrigin="anonymous" strategy="beforeInteractive"></Script>
         <div className="mx-auto max-w-4xl flex flex-col flex-1 p-8 min-h-screen">
             {children}
