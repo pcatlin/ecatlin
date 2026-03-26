@@ -1,5 +1,5 @@
 export default function Home() {
   return (
-      <main className="">Main</main>
+      <main className="grow">Main</main>
   );
 }
