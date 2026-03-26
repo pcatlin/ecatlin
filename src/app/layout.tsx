@@ -4,8 +4,8 @@ import {Analytics} from "@vercel/analytics/next"
 import {Geist, Geist_Mono} from "next/font/google"
 import Script from "next/script";
 import "./globals.css"
-import Footer from "@/app/components/Footer"
 import Header from "@/app/components/Header"
+import Footer from "@/app/components/Footer"
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
