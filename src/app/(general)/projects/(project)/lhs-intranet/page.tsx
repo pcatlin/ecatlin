@@ -1,4 +1,4 @@
-export default function Intranet() {
+export default function LhsIntranet() {
     return (
         <div>Intranet</div>
     )
