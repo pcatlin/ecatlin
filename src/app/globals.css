@@ -1,25 +1,39 @@
 @import "tailwindcss";
 @plugin "daisyui";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-
-  @media (prefers-color-scheme: dark) {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 /*noinspection CssUnresolvedCustomProperty*/
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --spacing-128: 32rem;
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
+p {
+  max-width: 100ch;
 }
+
+p + p {
+  margin-top: 1em;
+}
+
+/*.carousel {*/
+/*  display: grid;*/
+/*  grid-auto-flow: column;*/
+/*  grid-auto-columns: 50px;*/
+/*  gap: 1em;*/
+
+/*  overflow-x: auto;*/
+/*  overscroll-behavior-x: contain;*/
+/*  scroll-snap-type: x mandatory;*/
+/*  anchor-name: --carousel;*/
+
+/*  padding: 1em;*/
+/*  scroll-padding: 1em;*/
+/*  container-type: inline-size scroll-state;*/
+/*  inline-size: 1024px;*/
+/*  max-inline-size: 100vw;*/
+
+/*  > .slide {*/
+/*    scroll-snap-align: center;*/
+/*  }*/
+/*}*/
