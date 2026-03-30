@@ -26,7 +26,7 @@ export default function RootLayout({children}: Readonly<{ children: ReactNode; }
         <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <body className="font-sans bg-sky-950 text-slate-300">
         <Script src="https://kit.fontawesome.com/aaef8f0e02.js" crossOrigin="anonymous" strategy="beforeInteractive"></Script>
-        <div className="mx-auto max-w-7xl flex flex-col flex-1 p-8 min-h-svh">
+        <div className="flex flex-col flex-1 min-h-svh">
             {children}
             <Footer/>
         </div>

@@ -1,5 +1,5 @@
 export default function RecentProjects() {
     return (
-        <div>RecentProjects</div>
+        <div className="text-orange-700">RecentProjects</div>
     )
 }

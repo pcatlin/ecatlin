@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
     return (
-        <footer className="text-slate-200">
+        <footer className="text-slate-200 pb-8">
             <div className="flex justify-around gap-10 mb-5">
                 <div className="flex flex-col items-center justify-center gap-3 justify-self-start">
                     <Link href="/"><h2 className="font-display text-3xl text-slate-300">eCatlin</h2></Link>
@@ -32,7 +32,7 @@ export default function Footer() {
                     <li><a href="https://www.tickitreminders.com">TickIt Reminders</a></li>
                 </ul>
             </div>
-            <p className="text-sm text-center text-slate-400">
+            <p className="mx-auto text-sm text-center text-slate-400">
                 &copy; {new Date().getFullYear()} eCatlin. All rights reserved.
             </p>
         </footer>
