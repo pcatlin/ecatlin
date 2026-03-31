@@ -73,7 +73,7 @@ export default function HomeCarousel() {
       onScroll={handleScroll}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
-      className="carousel rounded-box w-128 overflow-x-auto scroll-smooth snap-x snap-mandatory"
+      className="carousel rounded-box max-w-128 overflow-x-auto scroll-smooth snap-x snap-mandatory gap-5"
     >
       {images.map((image, index) => (
         <div key={index} className="carousel-item w-full">

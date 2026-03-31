@@ -4,15 +4,15 @@ import RecentProjects from "@/app/components/RecentProjects";
 export default function Home() {
     return (
         <main className="grow py-8">
-            <section className="text-center mb-15">
+            <section className="mx-5 text-center mb-15">
                 <h1 className="flex flex-col text-5xl text-orange-500">Paul Catlin
                     <span className="font-light text-3xl">Projects and Rememberings</span>
                 </h1>
             </section>
 
-            <section className="mb-15">
+            <section className="mx-5 mb-15">
                 <div className="mx-auto max-w-7xl">
-                    <div className="flex gap-5 items-center">
+                    <div className="flex gap-5 items-center flex-col lg:flex-row">
                         <HomeCarousel/>
                         <div className="flex flex-col text-xl">
                             <p>How’s it going? <span className="ps-2 text-2xl font-bold">I’m Paul.</span></p>
