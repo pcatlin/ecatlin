@@ -15,7 +15,7 @@ export default function Footer() {
                 </div>
                 <ul className="flex flex-col">
                     <li className="mb-3"><h2 className="font-bold uppercase tracking-wider text-slate-300">Projects</h2></li>
-                    <li><Link href='/projects/cashback'>Cashback</Link></li>
+                    <li><Link href='/projects/cashback-python'>Cashback</Link></li>
                     <li><Link href='/projects/custard'>Custard</Link></li>
                     <li><Link href='/projects/ohmydosh'>OhMyDosh</Link></li>
                     <li><Link href='/projects'>See All</Link></li>
