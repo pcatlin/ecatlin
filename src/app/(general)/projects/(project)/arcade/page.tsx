@@ -1,3 +1,5 @@
 export default function Arcade() {
-    return <div>Coming soon!</div>
+    return (
+        <div>Arcade</div>
+    )
 }
