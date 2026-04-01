@@ -1,4 +1,5 @@
-import Link from "next/link";
+import Link from "next/link"
+import Tech from "@/app/components/Tech";
 
 
 export default function CashbackPython() {
@@ -114,32 +115,32 @@ export default function CashbackPython() {
 
             <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
 
-            <ul className="list-inside list-disc">
-                <li>Python 3.13.0</li>
-                <li>Flask - Web framework</li>
-                <li>Jinja2</li>
-                <li>Javascript - Frontend</li>
-                <li>HTML</li>
-                <li>SCSS - Styling</li>
-                <li>CSS - Styling</li>
-                <li>PostgreSQL 16 - Database</li>
-                <li>npm - Package manager</li>
-                <li>Node 18</li>
-                <li>Poetry - Python Package manager</li>
-                <li>Flyway - DB migrations</li>
-                <li>Git - Version Control</li>
-                <li>GitHub - Cloud Version Control</li>
-                <li>GitHub Actions - Deployment</li>
-                <li>Ansible - Deployment</li>
-                <li>pyTest - Backend Testing</li>
-                <li>Playwright - Frontend Testing</li>
-                <li>Webpack - JS bundler</li>
-                <li>Ruff - Linter</li>
-                <li>Bootstrap - CSS utilities</li>
-                <li>Font Awesome - Icons</li>
-                <li>Swiper - JS Carousels</li>
-                <li>Bulma - CSS utilities (used in admin)</li>
-            </ul>
+            <div className="flex flex-wrap gap-x-2 gap-y-3">
+                <Tech name="Python 3.13" stackType="backend"/>
+                <Tech name="Flask" description="Python web framework" stackType="backend"/>
+                <Tech name="Jinja2" stackType="frontend"/>
+                <Tech name="Javascript" stackType="frontend"/>
+                <Tech name="HTML" stackType="frontend"/>
+                <Tech name="SCSS" stackType="frontend"/>
+                <Tech name="CSS" stackType="frontend"/>
+                <Tech name="PostgreSQL 16" stackType="backend"/>
+                <Tech name="npm" description="Package manager" stackType="infrastructure"/>
+                <Tech name="Node 18" stackType="infrastructure"/>
+                <Tech name="Poetry" description="Python Package manager" stackType="infrastructure"/>
+                <Tech name="Flyway" description="DB migrations" stackType="infrastructure"/>
+                <Tech name="Git" description="Version Control" stackType="infrastructure"/>
+                <Tech name="GitHub" description="Cloud Version Control" stackType="infrastructure"/>
+                <Tech name="GitHub Actions" description="Deployment" stackType="infrastructure"/>
+                <Tech name="Ansible" description="Deployment" stackType="infrastructure"/>
+                <Tech name="pyTest" description="Backend Testing" stackType="backend"/>
+                <Tech name="Playwright" description="Frontend Testing" stackType="frontend"/>
+                <Tech name="Webpack" description="JS bundler" stackType="infrastructure"/>
+                <Tech name="Ruff" description="Linter" stackType="backend"/>
+                <Tech name="Bootstrap" description="CSS utilities" stackType="frontend"/>
+                <Tech name="Font Awesome" description="Icons" stackType="frontend"/>
+                <Tech name="Swiper" description="JS Carousels" stackType="frontend"/>
+                <Tech name="Bulma" description="CSS utilities (used in admin)" stackType="frontend"/>
+            </div>
         </article>
     )
 }
