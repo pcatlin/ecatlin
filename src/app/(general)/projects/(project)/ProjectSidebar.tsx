@@ -16,7 +16,7 @@ export default function ProjectSidebar() {
     }
 
     return (
-        <nav className="sticky top-20 hidden lg:flex flex-col text-base text-slate-400 gap-3 w-100">
+        <nav className="sticky top-20 hidden lg:flex flex-col text-base gap-3 w-200">
             <h2 className="text-md font-semibold text-slate-200 tracking-widest uppercase mb-1">
                 Table of Contents
             </h2>

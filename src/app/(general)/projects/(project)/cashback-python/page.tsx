@@ -40,15 +40,14 @@ export default function CashbackPython() {
                         </li>
                         <li>Tasks can be placed on multiple points of the ladder.</li>
                         <li>The task image numbers were reduced. Now there is only a task image and a
-                            brand
-                            image.
+                            brand image.
                         </li>
                     </ul>
                 </div>
-                <div className="">
+                <div className="grid justify-center">
                     <img src="/images/cashback-python/screenshot-home.webp"
                          alt="Screenshot of homepage"
-                         className="rounded-lg"
+                         className="rounded-lg max-w-full sm:max-w-2/3 lg:max-w-full mx-auto"
                          width="700" height="798"
                     />
                 </div>
