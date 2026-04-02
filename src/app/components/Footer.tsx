@@ -3,7 +3,7 @@ import Link from 'next/link'
 export default function Footer() {
     return (
         <footer className="text-slate-200 pb-8">
-            <div className="flex justify-around gap-10 mb-5">
+            <div className="flex flex-col sm:flex-row items-center justify-around gap-10 mb-5">
                 <div className="flex flex-col items-center justify-center gap-3 justify-self-start">
                     <Link href="/"><h2 className="font-display text-3xl text-slate-300">eCatlin</h2></Link>
                     <ul className="flex gap-1">
@@ -13,7 +13,7 @@ export default function Footer() {
                         <li><a href="https://www.instagram.com/reinstall/" aria-label="Instagram"><i className="fa-brands fa-instagram text-2xl"></i></a></li>
                     </ul>
                 </div>
-                <ul className="flex flex-col">
+                <ul className="flex flex-col text-center sm:text-start">
                     <li className="mb-3"><h2 className="font-bold uppercase tracking-wider text-slate-300">Projects</h2></li>
                     <li><Link href='/projects/cashback-python'>Cashback</Link></li>
                     <li><Link href='/projects/custard'>Custard</Link></li>
@@ -27,7 +27,7 @@ export default function Footer() {
                 {/*    <li></li>*/}
                 {/*    <li></li>*/}
                 {/*</ul>*/}
-                <ul className="flex flex-col">
+                <ul className="flex flex-col text-center sm:text-start">
                     <li className="mb-3"><h2 className="font-bold uppercase tracking-wider text-slate-300">Sites</h2></li>
                     <li><a href="https://www.travel-rates.com">Travel Rates</a></li>
                     <li><a href="https://www.tickitreminders.com">TickIt Reminders</a></li>

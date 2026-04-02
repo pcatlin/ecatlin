@@ -6,13 +6,13 @@ export default function CustardApp() {
 
     return (
         <article>
-            <div className="flex items-center justify-center gap-5">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
                 <img src="/images/custard-app/app-logo.webp"
                      alt="Custard app logo"
                      width="150" height="150"
                      className="rounded-3xl shadow-lg"
                 />
-                <h1 className="text-4xl font-bold text-orange-500">Custard Gift Cards App</h1>
+                <h1 className="text-4xl font-bold text-orange-500 text-center">Custard Gift Cards App</h1>
             </div>
 
             <h2 className={h2_classes} id="what-is-it">What is it?</h2>

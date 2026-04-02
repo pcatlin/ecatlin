@@ -3,10 +3,12 @@
 import { useSelectedLayoutSegment } from "next/navigation";
 import { cashbackPythonSidebar } from "./cashback-python/sidebar";
 import {CustardGiftCardsSidebar} from "./custard-app/sidebar";
+import {CustardSidebar} from "./custard/sidebar";
 
 const sidebarLinksByProject = {
     "cashback-python": cashbackPythonSidebar,
     "custard-app": CustardGiftCardsSidebar,
+    "custard": CustardSidebar,
 } as const;
 
 export default function ProjectSidebar() {
