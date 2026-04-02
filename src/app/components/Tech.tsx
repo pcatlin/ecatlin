@@ -1,7 +1,7 @@
 type Props = {
     name: string,
     description?: string,
-    stackType: "frontend" | "backend" | "infrastructure",
+    stackType: "frontend" | "backend" | "infrastructure" | "tools",
 }
 
 export default function Tech({name, description, stackType}: Props) {
@@ -9,6 +9,7 @@ export default function Tech({name, description, stackType}: Props) {
         frontend: "bg-orange-800 text-slate-100",
         backend: "bg-orange-200 text-slate-800",
         infrastructure: "bg-orange-300 text-slate-800",
+        tools: "bg-orange-400 text-slate-800",
     }
 
     const colour = colourByStackType[stackType]

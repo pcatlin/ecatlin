@@ -2,9 +2,11 @@
 
 import { useSelectedLayoutSegment } from "next/navigation";
 import { cashbackPythonSidebar } from "./cashback-python/sidebar";
+import {CustardGiftCardsSidebar} from "./custard-app/sidebar";
 
 const sidebarLinksByProject = {
     "cashback-python": cashbackPythonSidebar,
+    "custard-app": CustardGiftCardsSidebar,
 } as const;
 
 export default function ProjectSidebar() {
@@ -16,7 +18,7 @@ export default function ProjectSidebar() {
     }
 
     return (
-        <nav className="sticky top-20 hidden lg:flex flex-col text-base gap-3 w-200">
+        <nav className="sticky top-20 hidden lg:flex flex-col text-base gap-3">
             <h2 className="text-md font-semibold text-slate-200 tracking-widest uppercase mb-1">
                 Table of Contents
             </h2>
