@@ -1,4 +1,5 @@
 import Tech from "@/app/components/Tech";
+import {CodeBlock} from "@/app/components/CodeBlock";
 
 export default function Custard() {
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
@@ -27,17 +28,17 @@ export default function Custard() {
             <p>The site is easily usable by a keyboard. A User can tab through the menu and the hover only
                 popup opens due to the handy `:focus-visible` selector. This lets you tab through the menu
                 and it&#39;s child list of links.</p>
-            <code>{`
-                .dropdown-container {
-                    display:none;
-                }
 
-                .has-dropdown:focus-within .dropdown-container,
-                .has-dropdown:hover .dropdown-container {
-                    display: flex;
-                }
-            `}
-            </code>
+            <CodeBlock lang="css">{`
+    .dropdown-container {
+        display:none;
+    }
+    
+    .has-dropdown:focus-within .dropdown-container,
+    .has-dropdown:hover .dropdown-container {
+        display: flex;
+    }
+                    `}</CodeBlock>
 
             <h2 className={h2_classes}>Tech Stack</h2>
 
