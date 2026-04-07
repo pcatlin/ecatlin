@@ -12,5 +12,7 @@ export async function CodeBlock(props: Props) {
         theme: 'aurora-x',
     })
 
-    return <div className="text-base my-5" dangerouslySetInnerHTML={{ __html: out }} />
+    return (
+        <div className="text-base my-5" dangerouslySetInnerHTML={{__html: out}}/>
+    )
 }
