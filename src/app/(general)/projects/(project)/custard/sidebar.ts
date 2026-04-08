@@ -2,5 +2,6 @@ import {SidebarLink} from "@/app/types"
 
 export const CustardSidebar: ReadonlyArray<SidebarLink> = [
     { href: "#what-is-it", label: "What is it?" },
+    { href: "#accessible-keyboard-navigation", label: "Accessible Keyboard Navigation" },
     { href: "#tech-stack", label: "Tech Stack" },
 ]

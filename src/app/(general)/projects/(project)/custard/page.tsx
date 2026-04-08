@@ -14,7 +14,7 @@ export default function Custard() {
                 />
             </div>
 
-            <h2 className={h2_classes}>What is Custard</h2>
+            <h2 className={h2_classes} id="what-is-it">What is Custard</h2>
 
             <p>
                 Custard (joincustard.co.uk) is a modern cashback and rewards site that allows users to earn money
@@ -23,7 +23,7 @@ export default function Custard() {
                 categorised, user-friendly interface.
             </p>
 
-            <h2 className={h2_classes}>Accessible keyboard navigation</h2>
+            <h2 className={h2_classes} id="accessible-keyboard-navigation">Accessible keyboard navigation</h2>
 
             <p>The site is easily usable by a keyboard. A User can tab through the menu and the hover only
                 popup opens due to the handy `:focus-visible` selector. This lets you tab through the menu
@@ -40,7 +40,7 @@ export default function Custard() {
     }
                     `}</CodeBlock>
 
-            <h2 className={h2_classes}>Tech Stack</h2>
+            <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
 
             <div className="flex flex-wrap gap-x-2 gap-y-3">
                 <Tech name="Python 3.12" stackType="backend"/>
