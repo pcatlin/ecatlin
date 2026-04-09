@@ -1,5 +1,6 @@
 import Tech from "@/app/components/Tech";
 import {CodeBlock} from "@/app/components/CodeBlock";
+import SavingsCalculatorFeature from "@/app/components/SavingsCalculatorFeature";
 
 export default function Custard() {
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
@@ -29,7 +30,8 @@ export default function Custard() {
                 popup opens due to the handy `:focus-visible` selector. This lets you tab through the menu
                 and it&#39;s child list of links.</p>
 
-            <CodeBlock lang="css">{`
+            <CodeBlock lang="css">
+                {`
     .dropdown-container {
         display:none;
     }
@@ -38,10 +40,12 @@ export default function Custard() {
     .has-dropdown:hover .dropdown-container {
         display: flex;
     }
-                    `}</CodeBlock>
+                `}
+            </CodeBlock>
+
+            <SavingsCalculatorFeature/>
 
             <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
-
             <div className="flex flex-wrap gap-x-2 gap-y-3">
                 <Tech name="Python 3.12" stackType="backend"/>
                 <Tech name="Flask" description="Web framework" stackType="backend"/>

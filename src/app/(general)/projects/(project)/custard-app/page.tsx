@@ -1,5 +1,6 @@
 import Tech from "@/app/components/Tech";
 import Link from "next/link";
+import SavingsCalculatorFeature from "@/app/components/SavingsCalculatorFeature";
 
 export default function CustardApp() {
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
@@ -16,7 +17,6 @@ export default function CustardApp() {
             </div>
 
             <h2 className={h2_classes} id="what-is-it">What is it?</h2>
-
             <p>
                 The Custard Gift Cards app is a React Native Expo based app for iOS and Android devices.
                 It allows users to buy gift cards and earn a percentage of cashback, which gets applied
@@ -27,8 +27,9 @@ export default function CustardApp() {
                 the <Link href="/projects/custard" className="text-accent">Custard website</Link>, with many new endpoints added just
                 for the app. With pretty much all logic handled by the backend.</p>
 
-            <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
+            <SavingsCalculatorFeature/>
 
+            <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
             <div className="flex flex-wrap gap-x-2 gap-y-3">
                 <Tech name="React Native" stackType="frontend"/>
                 <Tech name="Expo" stackType="backend"/>
