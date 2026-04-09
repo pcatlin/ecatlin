@@ -1,5 +1,6 @@
 import Link from "next/link"
 import Tech from "@/app/components/Tech";
+import AdminChangeLog from "@/app/components/shared-features/AdminChangeLog";
 
 
 export default function CashbackPython() {
@@ -83,12 +84,6 @@ export default function CashbackPython() {
                 layout,
                 using a mobile-first CSS approach</p>
 
-
-            <h2 className={h2_classes} id="admin-changelog">Admin Changelog</h2>
-
-            <p>I improved the changelog feature on the admin of the site.</p>
-
-
             <h2 className={h2_classes} id="blurred-background-card-images">Blurred Background Card
                 Images</h2>
 
@@ -112,8 +107,9 @@ export default function CashbackPython() {
                 A
                 nice touch.</p>
 
-            <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
+            <AdminChangeLog/>
 
+            <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
             <div className="flex flex-wrap gap-x-2 gap-y-3">
                 <Tech name="Python 3.13" stackType="backend"/>
                 <Tech name="Flask" description="Python web framework" stackType="backend"/>

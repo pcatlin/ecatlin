@@ -1,6 +1,6 @@
 import Tech from "@/app/components/Tech";
 import Link from "next/link";
-import SavingsCalculatorFeature from "@/app/components/SavingsCalculatorFeature";
+import SavingsCalculator from "@/app/components/shared-features/SavingsCalculator";
 
 export default function CustardApp() {
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
@@ -27,7 +27,7 @@ export default function CustardApp() {
                 the <Link href="/projects/custard" className="text-accent">Custard website</Link>, with many new endpoints added just
                 for the app. With pretty much all logic handled by the backend.</p>
 
-            <SavingsCalculatorFeature/>
+            <SavingsCalculator/>
 
             <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
             <div className="flex flex-wrap gap-x-2 gap-y-3">

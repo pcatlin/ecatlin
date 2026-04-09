@@ -1,4 +1,4 @@
-export default function SavingsCalculatorFeature() {
+export default function SavingsCalculator() {
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 
     return (

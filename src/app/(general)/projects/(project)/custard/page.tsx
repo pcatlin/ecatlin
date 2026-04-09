@@ -1,6 +1,7 @@
 import Tech from "@/app/components/Tech";
 import {CodeBlock} from "@/app/components/CodeBlock";
-import SavingsCalculatorFeature from "@/app/components/SavingsCalculatorFeature";
+import SavingsCalculator from "@/app/components/shared-features/SavingsCalculator";
+import AdminChangeLog from "@/app/components/shared-features/AdminChangeLog";
 
 export default function Custard() {
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
@@ -43,7 +44,9 @@ export default function Custard() {
                 `}
             </CodeBlock>
 
-            <SavingsCalculatorFeature/>
+            <SavingsCalculator/>
+
+            <AdminChangeLog/>
 
             <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
             <div className="flex flex-wrap gap-x-2 gap-y-3">
