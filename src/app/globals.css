@@ -15,6 +15,10 @@ p + p {
   margin-top: 1em;
 }
 
+.fix p + p {
+  margin-top: 0;
+}
+
 pre.shiki {
   overflow-x: auto;
   max-width: calc(100dvw - 64px);

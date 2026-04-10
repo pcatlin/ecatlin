@@ -1,5 +1,12 @@
+import {projects} from "@/app/projects";
+import ProjectCard from "@/app/components/ProjectCard";
+
 export default function RecentProjects() {
     return (
-        <div className="text-orange-700">RecentProjects</div>
+        <div className="py-5 grid gap-5" style={{gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))"}}>
+            {Object.entries(projects).map(([slug, project]) => (
+                <ProjectCard key={slug} slug={slug} {...project} />
+            ))}
+        </div>
     )
 }

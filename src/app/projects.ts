@@ -39,7 +39,7 @@ export const projects: ProjectsMap = {
         colour: "oklab(0.78 0.05 0.16)",
         dt_start: new Date('2024-03-18'),
         tech: [
-            {name: "Python 3.12", stackType: "backend", primary: true},
+            {name: "Python", stackType: "backend", primary: true},
             {name: "Flask", description: "Web framework", stackType: "backend"},
             {name: "Jinja2", stackType: "frontend"},
             {name: "Javascript", stackType: "frontend", primary: true},
