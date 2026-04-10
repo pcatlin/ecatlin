@@ -5,8 +5,8 @@ import { useEffect, useRef, useState } from "react";
 
 const images = [
   { src: "/images/me-camera.webp", alt: "Paul Catlin 1" },
-  { src: "/images/me-camera.webp", alt: "Paul Catlin 2" },
-  { src: "/images/me-camera.webp", alt: "Paul Catlin 3" },
+  { src: "/images/stars.webp", alt: "Stars from Skye, Scotland" },
+  { src: "/images/planes.webp", alt: "The Red Arrows, Flying at Eastbourne Airshow" },
 ];
 
 export default function HomeCarousel() {
