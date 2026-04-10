@@ -1,9 +1,11 @@
 import Link from "next/link"
-import Tech from "@/app/components/Tech";
 import AdminChangeLog from "@/app/components/shared-features/AdminChangeLog";
+import TechStack from "@/app/components/shared-features/TechStack";
+import {projects} from "@/app/projects";
 
 
 export default function CashbackPython() {
+    const {tech} = projects["cashback-python"] || null
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 
     return (
@@ -88,54 +90,21 @@ export default function CashbackPython() {
                 Images</h2>
 
             <p>When the text and other contents for a &quot;task card&quot; is larger than anticipated,
-                the
-                image
-                has
-                a clever little trick up it&apos;s sleeve. It looks like it blurs to the top and bottom,
-                filling
-                the available space. This is achieved by displaying a copy of the card behind the
-                original
-                image with a blur filter applied.</p>
+                the image has a clever little trick up it&apos;s sleeve. It looks like it blurs to the top and
+                bottom, filling the available space. This is achieved by displaying a copy of the card behind
+                the original image with a blur filter applied.</p>
 
             <h2 className={h2_classes}>My Activity section - Async fetching and animation</h2>
 
             <p>To speed up the page for users with a lot of activity. I built this page to paginate the
-                activity and allow you to choose from various categories of activity. It fetches the
-                data
+                activity and allow you to choose from various categories of activity. It fetches the data
                 asynchronously after the main page is loaded.
                 There is also a cute little animated padlock that rotates when you cannot cash out yet.
-                A
-                nice touch.</p>
+                A nice touch.</p>
 
             <AdminChangeLog/>
 
-            <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
-            <div className="flex flex-wrap gap-x-2 gap-y-3">
-                <Tech name="Python 3.13" stackType="backend"/>
-                <Tech name="Flask" description="Python web framework" stackType="backend"/>
-                <Tech name="Jinja2" stackType="frontend"/>
-                <Tech name="Javascript" stackType="frontend"/>
-                <Tech name="HTML" stackType="frontend"/>
-                <Tech name="SCSS" stackType="frontend"/>
-                <Tech name="CSS" stackType="frontend"/>
-                <Tech name="PostgreSQL 16" stackType="backend"/>
-                <Tech name="npm" description="Package manager" stackType="infrastructure"/>
-                <Tech name="Node 18" stackType="infrastructure"/>
-                <Tech name="Poetry" description="Python Package manager" stackType="infrastructure"/>
-                <Tech name="Flyway" description="DB migrations" stackType="infrastructure"/>
-                <Tech name="Git" description="Version Control" stackType="infrastructure"/>
-                <Tech name="GitHub" description="Cloud Version Control" stackType="infrastructure"/>
-                <Tech name="GitHub Actions" description="Deployment" stackType="infrastructure"/>
-                <Tech name="Ansible" description="Deployment" stackType="infrastructure"/>
-                <Tech name="pyTest" description="Backend Testing" stackType="backend"/>
-                <Tech name="Playwright" description="Frontend Testing" stackType="frontend"/>
-                <Tech name="Webpack" description="JS bundler" stackType="infrastructure"/>
-                <Tech name="Ruff" description="Linter" stackType="backend"/>
-                <Tech name="Bootstrap" description="CSS utilities" stackType="frontend"/>
-                <Tech name="Font Awesome" description="Icons" stackType="frontend"/>
-                <Tech name="Swiper" description="JS Carousels" stackType="frontend"/>
-                <Tech name="Bulma" description="CSS utilities (used in admin)" stackType="frontend"/>
-            </div>
+            <TechStack tech={tech}/>
         </article>
     )
 }

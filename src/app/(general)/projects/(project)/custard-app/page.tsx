@@ -1,8 +1,10 @@
-import Tech from "@/app/components/Tech";
 import Link from "next/link";
 import SavingsCalculator from "@/app/components/shared-features/SavingsCalculator";
+import TechStack from "@/app/components/shared-features/TechStack";
+import {projects} from "@/app/projects";
 
 export default function CustardApp() {
+    const {tech} = projects["custard-app"] || null
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 
     return (
@@ -29,22 +31,7 @@ export default function CustardApp() {
 
             <SavingsCalculator/>
 
-            <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
-            <div className="flex flex-wrap gap-x-2 gap-y-3">
-                <Tech name="React Native" stackType="frontend"/>
-                <Tech name="Expo" stackType="backend"/>
-                <Tech name="Figma" stackType="tools"/>
-                <Tech name="Jest" description="Testing" stackType="tools"/>
-                <Tech name="Maestro" stackType="tools"/>
-                <Tech name="TypeScript" stackType="frontend"/>
-                <Tech name="NPM" stackType="infrastructure"/>
-                <Tech name="Sentry" stackType="tools"/>
-                <Tech name="API" stackType="backend"/>
-                <Tech name="Stripe" stackType="backend"/>
-                <Tech name="TrueLayer" stackType="backend"/>
-                <Tech name="React Query" stackType="frontend"/>
-                <Tech name="OneSignal" stackType="frontend"/>
-            </div>
+            <TechStack tech={tech}/>
         </article>
     )
 }

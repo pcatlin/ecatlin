@@ -1,7 +1,9 @@
-import Tech from "@/app/components/Tech";
 import Link from "next/link";
+import TechStack from "@/app/components/shared-features/TechStack";
+import {projects} from "@/app/projects";
 
 export default function OhMyDosh() {
+    const {tech} = projects["ohmydosh"] || null
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 
     return (
@@ -44,29 +46,7 @@ export default function OhMyDosh() {
                 Learning to &apos;use client&apos; and resolving hydration errors were the main lessons.
             </p>
 
-            <h2 className={h2_classes} id="tech-stack">Tech Stack</h2>
-
-            <div className="flex flex-wrap gap-x-2 gap-y-3">
-                <Tech name="React" stackType="frontend"/>
-                <Tech name="Next.js" stackType="frontend"/>
-                <Tech name="TypeScript" stackType="frontend"/>
-                <Tech name="JavaScript" stackType="frontend"/>
-                <Tech name="HTML" stackType="frontend"/>
-                <Tech name="SCSS" stackType="frontend"/>
-                <Tech name="CSS" stackType="frontend"/>
-                <Tech name="PHP" stackType="backend"/>
-                <Tech name="MySQL" stackType="backend"/>
-                <Tech name="Docker" stackType="infrastructure"/>
-                <Tech name="Kubernetes" stackType="infrastructure"/>
-                <Tech name="npm" stackType="infrastructure"/>
-                <Tech name="Node" stackType="backend"/>
-                <Tech name="Git" description="Version Control" stackType="infrastructure"/>
-                <Tech name="GitHub" description="Cloud Version Control" stackType="infrastructure"/>
-                <Tech name="GitHub Actions" stackType="infrastructure"/>
-                <Tech name="Tailwind" stackType="frontend"/>
-                <Tech name="Font Awesome" stackType="tools"/>
-                <Tech name="Swiper" stackType="frontend" description="JS Carousels"/>
-            </div>
+            <TechStack tech={tech}/>
         </article>
     )
 }

@@ -1,11 +1,7 @@
-type Props = {
-    name: string,
-    description?: string,
-    stackType: "frontend" | "backend" | "infrastructure" | "tools",
-}
+import {Tech as TechType} from "@/app/types"
 
-export default function Tech({name, description, stackType}: Props) {
-    const colourByStackType: Record<Props["stackType"], string> = {
+export default function Tech({name, description, stackType}: TechType) {
+    const colourByStackType: Record<TechType["stackType"], string> = {
         frontend: "bg-orange-800 text-slate-100",
         backend: "bg-orange-200 text-slate-800",
         infrastructure: "bg-orange-300 text-slate-800",
