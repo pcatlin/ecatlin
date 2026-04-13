@@ -1,5 +1,6 @@
 import HomeCarousel from "@/app/components/HomeCarousel";
 import RecentProjects from "@/app/components/RecentProjects";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -25,9 +26,15 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="mb-15 bg-slate-300 p-5">
+            <section className="mb-15 bg-slate-300 px-5 py-10">
                 <div className="mx-auto max-w-7xl">
+                    <h2 className="text-sky-950 font-bold text-center text-3xl mb-10">Recent Projects</h2>
                     <RecentProjects/>
+                    <Link href="/projects"
+                          className="bg-accent text-slate-900 flex items-center w-fit ml-auto px-3 py-2 rounded-lg shadow-md">
+                        All Projects
+                        <i className="fa fa-chevron-right ml-3"></i>
+                    </Link>
                 </div>
             </section>
 
