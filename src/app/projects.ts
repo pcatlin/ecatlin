@@ -63,7 +63,15 @@ export const projects: ProjectsMap = {
             {name: "Font Awesome", description: "Icons", stackType: "frontend"},
             {name: "Swiper", description: "JS Carousels", stackType: "frontend"},
             {name: "Bulma", description: "CSS utilities (used in admin)", stackType: "frontend"},
-        ]
+        ],
+        sidebar: [
+            { href: "#what-is-cashback", label: "What is Cashback.co.uk" },
+            { href: "#optimal-images", label: "Optimal images" },
+            { href: "#container-based-card-layout", label: "Container based Card layout" },
+            { href: "#blurred-background-card-images", label: "Blurred background card images" },
+            { href: "#admin-changelog", label: "Admin Changelog" },
+            { href: "#tech-stack", label: "Tech Stack" },
+        ],
     },
     "custard": {
         name: "Custard",
@@ -96,6 +104,13 @@ export const projects: ProjectsMap = {
             {name: "Swiper", stackType: "frontend", description: "JS Carousels"},
             {name: "Bulma", stackType: "frontend", description: "CSS utilities (used in admin)"},
         ],
+        sidebar: [
+            { href: "#what-is-it", label: "What is it?" },
+            { href: "#accessible-keyboard-navigation", label: "Accessible Keyboard Navigation" },
+            { href: "#savings-calculator", label: "Savings Calculator" },
+            { href: "#admin-changelog", label: "Admin Changelog" },
+            { href: "#tech-stack", label: "Tech Stack" },
+        ],
     },
     "custard-app": {
         name: "Custard App",
@@ -116,6 +131,11 @@ export const projects: ProjectsMap = {
             {name: "TrueLayer", stackType: "backend"},
             {name: "React Query", stackType: "frontend"},
             {name: "OneSignal", stackType: "frontend"},
+        ],
+        sidebar: [
+            { href: "#what-is-it", label: "What is it?" },
+            { href: "#savings-calculator", label: "Savings Calculator" },
+            { href: "#tech-stack", label: "Tech Stack" },
         ],
     },
     "ohmydosh": {
@@ -144,7 +164,12 @@ export const projects: ProjectsMap = {
             {name: "Tailwind", stackType: "frontend", primary: true},
             {name: "Font Awesome", stackType: "tools"},
             {name: "Swiper", stackType: "frontend", description: "JS Carousels"},
-        ]
+        ],
+        sidebar: [
+            { href: "#what-was-it", label: "What was OhMyDosh?" },
+            { href: "#improved-relaunch", label: "Improved Relaunch" },
+            { href: "#tech-stack", label: "Tech Stack" },
+        ],
     },
     "cashback-php": {
         name: "Cashback (2022)",
@@ -169,6 +194,11 @@ export const projects: ProjectsMap = {
             {name: "GitHub Actions", stackType: "infrastructure"},
             {name: "Font Awesome", stackType: "tools"},
         ],
+        sidebar: [
+            { href: "#what-is-cashback", label: "What is Cashback.co.uk" },
+            { href: "#kubernetes-stack", label: "Kubernetes Stack" },
+            { href: "#tech-stack", label: "Tech Stack" },
+        ],
     },
     "travel-rates": {
         name: "Travel Rates",
@@ -182,5 +212,9 @@ export const projects: ProjectsMap = {
             {name: "Google AdMob", stackType: "frontend"},
             {name: "npm", stackType: "infrastructure"},
         ],
+        sidebar: [
+            { href: "#what-is-it", label: "What is the Travel Rates App?" },
+            { href: "#tech-stack", label: "Tech Stack" },
+        ]
     },
 }

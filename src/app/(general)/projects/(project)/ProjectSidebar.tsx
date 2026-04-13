@@ -1,25 +1,11 @@
 'use client';
 
 import {useSelectedLayoutSegment} from "next/navigation";
-import {cashbackPythonSidebar} from "./cashback-python/sidebar";
-import {custardGiftCardsSidebar} from "./custard-app/sidebar";
-import {custardSidebar} from "./custard/sidebar";
-import {ohMyDoshSidebar} from "./ohmydosh/sidebar";
-import {cashbackPhpSidebar} from "./cashback-php/sidebar";
-import {travelRatesSidebar} from "./travel-rates/sidebar";
-
-const sidebarLinksByProject = {
-    "cashback-python": cashbackPythonSidebar,
-    "custard-app": custardGiftCardsSidebar,
-    "custard": custardSidebar,
-    "ohmydosh": ohMyDoshSidebar,
-    "cashback-php": cashbackPhpSidebar,
-    "travel-rates": travelRatesSidebar,
-} as const;
+import {projects} from "@/app/projects";
 
 export default function ProjectSidebar() {
-    const project = useSelectedLayoutSegment();
-    const links = project ? sidebarLinksByProject[project as keyof typeof sidebarLinksByProject] : undefined;
+    const slug = useSelectedLayoutSegment();
+    const links = slug ? projects[slug]?.sidebar : undefined;
 
     if (!links?.length) {
         return null;
@@ -31,7 +17,7 @@ export default function ProjectSidebar() {
                 Table of Contents
             </h2>
             {links.map((link) => (
-                <a key={link.href} href={`/projects/${project}${link.href}`}>
+                <a key={link.href} href={`/projects/${slug}${link.href}`}>
                     {link.label}
                 </a>
             ))}

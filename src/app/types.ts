@@ -12,6 +12,7 @@ export type Project = {
     dt_end?: Date,
     colour?: string,
     tech?: Tech[],
+    sidebar?: SidebarLink[],
 }
 
 export type Tech = {
