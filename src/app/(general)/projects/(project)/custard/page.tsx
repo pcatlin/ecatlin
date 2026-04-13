@@ -2,10 +2,17 @@ import {CodeBlock} from "@/app/components/CodeBlock";
 import SavingsCalculator from "@/app/components/shared-features/SavingsCalculator";
 import AdminChangeLog from "@/app/components/shared-features/AdminChangeLog";
 import TechStack from "@/app/components/shared-features/TechStack";
-import {projects} from "@/app/projects";
+import {projectMetadata, projects} from "@/app/projects";
+import {Metadata} from "next";
+
+const slug = "custard"
+
+export function generateMetadata(): Metadata {
+    return projectMetadata(slug)
+}
 
 export default function Custard() {
-    const {tech} = projects["custard"] || null
+    const {tech} = projects[slug] || null
 
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 

@@ -1,10 +1,17 @@
 import Link from "next/link";
 import SavingsCalculator from "@/app/components/shared-features/SavingsCalculator";
 import TechStack from "@/app/components/shared-features/TechStack";
-import {projects} from "@/app/projects";
+import {projectMetadata, projects} from "@/app/projects";
+import {Metadata} from "next";
+
+const slug = "custard-app"
+
+export function generateMetadata(): Metadata {
+    return projectMetadata(slug)
+}
 
 export default function CustardApp() {
-    const {tech} = projects["custard-app"] || null
+    const {tech} = projects[slug] || null
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 
     return (
@@ -22,11 +29,12 @@ export default function CustardApp() {
             <p>
                 The Custard Gift Cards app is a React Native Expo based app for iOS and Android devices.
                 It allows users to buy gift cards and earn a percentage of cashback, which gets applied
-                to their custard account.  When users earn over £10 they can cash out this money!
+                to their custard account. When users earn over £10 they can cash out this money!
             </p>
 
             <p>The backend for the app is the same Python platform that also powers
-                the <Link href="/projects/custard" className="text-accent">Custard website</Link>, with many new endpoints added just
+                the <Link href="/projects/custard" className="text-accent">Custard website</Link>, with many new
+                endpoints added just
                 for the app. With pretty much all logic handled by the backend.</p>
 
             <SavingsCalculator/>

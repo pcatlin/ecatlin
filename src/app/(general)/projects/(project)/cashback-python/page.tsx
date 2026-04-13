@@ -1,11 +1,17 @@
 import Link from "next/link"
 import AdminChangeLog from "@/app/components/shared-features/AdminChangeLog";
 import TechStack from "@/app/components/shared-features/TechStack";
-import {projects} from "@/app/projects";
+import {projects, projectMetadata} from "@/app/projects";
+import {Metadata} from "next";
 
+const slug = "cashback-python";
+
+export function generateMetadata(): Metadata {
+    return projectMetadata(slug)
+}
 
 export default function CashbackPython() {
-    const {tech} = projects["cashback-python"] || null
+    const {tech} = projects[slug] || null
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 
     return (

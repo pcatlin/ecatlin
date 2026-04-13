@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import {ProjectsMap} from "@/app/types";
 
 export function sortedProjects(limit?: number) {
@@ -10,6 +11,26 @@ export function sortedProjects(limit?: number) {
             return byEnd !== 0 ? byEnd : b.dt_start.getTime() - a.dt_start.getTime()
         })
         .slice(0, limit)
+}
+
+
+export function projectMetadata(slug: string): Metadata {
+    const project = projects[slug]
+    return {
+        title: `${project.name} | eCatlin`,
+        description: project.description,
+        openGraph: {
+            title: project.name,
+            description: project.description,
+            url: `https://www.ecatlin.com/projects/${slug}`,
+            type: "article",
+        },
+        twitter: {
+            card: "summary",
+            title: project.name,
+            description: project.description,
+        },
+    }
 }
 
 export const projects: ProjectsMap = {

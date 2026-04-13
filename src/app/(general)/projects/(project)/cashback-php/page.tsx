@@ -1,9 +1,15 @@
-import {projects} from "@/app/projects";
+import {projectMetadata, projects} from "@/app/projects";
 import TechStack from "@/app/components/shared-features/TechStack";
+import {Metadata} from "next";
 
+const slug = "cashback-php";
+
+export function generateMetadata(): Metadata {
+    return projectMetadata(slug)
+}
 
 export default function CashbackPhp() {
-    const {tech} = projects["cashback-php"] || null
+    const {tech} = projects[slug] || null
     const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 
     return (
@@ -17,10 +23,10 @@ export default function CashbackPhp() {
 
             <h1 className={h2_classes} id="what-is-cashback">What is Cashback.co.uk</h1>
             <p>
-                Cashback is a (kind of) successor to the popular 20 cogs site.  The idea is that users chose from a
-                small list of tasks to complete.  These could be offers, surveys or simply to sign up to a site. They
+                Cashback is a (kind of) successor to the popular 20 cogs site. The idea is that users chose from a
+                small list of tasks to complete. These could be offers, surveys or simply to sign up to a site. They
                 usually have a reward value. When this has been done, your account gets the reward and the next
-                level opens up.  There are 15 levels to complete, and when you reach the end you can cash out your
+                level opens up. There are 15 levels to complete, and when you reach the end you can cash out your
                 built up earnings by bank transfer or paypal!
             </p>
 
