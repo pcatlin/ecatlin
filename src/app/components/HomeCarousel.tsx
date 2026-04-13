@@ -4,9 +4,9 @@ import Image from "next/image";
 import { useEffect, useRef, useState } from "react";
 
 const images = [
-  { src: "/images/me-camera.webp", alt: "Paul Catlin 1" },
-  { src: "/images/stars.webp", alt: "Stars from Skye, Scotland" },
-  { src: "/images/planes.webp", alt: "The Red Arrows, Flying at Eastbourne Airshow" },
+  { src: "/images/home/me-camera.webp", alt: "Paul Catlin 1" },
+  { src: "/images/home/stars.webp", alt: "Stars from Skye, Scotland" },
+  { src: "/images/home/planes.webp", alt: "The Red Arrows, Flying at Eastbourne Airshow" },
 ];
 
 export default function HomeCarousel() {
@@ -73,7 +73,7 @@ export default function HomeCarousel() {
       onScroll={handleScroll}
       onMouseEnter={() => setIsPaused(true)}
       onMouseLeave={() => setIsPaused(false)}
-      className="carousel rounded-box max-w-128 overflow-x-auto scroll-smooth snap-x snap-mandatory gap-5"
+      className="carousel rounded-box max-w-lg overflow-x-auto scroll-smooth snap-x snap-mandatory gap-5"
     >
       {images.map((image, index) => (
         <div key={index} className="carousel-item w-full">
