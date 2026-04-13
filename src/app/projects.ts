@@ -1,5 +1,17 @@
 import {ProjectsMap} from "@/app/types";
 
+export function sortedProjects(limit?: number) {
+    return Object.entries(projects)
+        .sort(([, a], [, b]) => {
+            if (!a.dt_end && !b.dt_end) return b.dt_start.getTime() - a.dt_start.getTime()
+            if (!a.dt_end) return -1
+            if (!b.dt_end) return 1
+            const byEnd = b.dt_end.getTime() - a.dt_end.getTime()
+            return byEnd !== 0 ? byEnd : b.dt_start.getTime() - a.dt_start.getTime()
+        })
+        .slice(0, limit)
+}
+
 export const projects: ProjectsMap = {
     "cashback-python": {
         name: "Cashback",

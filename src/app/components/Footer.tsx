@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import {sortedProjects} from "@/app/projects";
 
 export default function Footer() {
     return (
@@ -18,12 +19,12 @@ export default function Footer() {
                     </ul>
                 </div>
                 <ul className="flex flex-col text-center sm:text-start">
-                    <li className="mb-3"><h2 className="font-bold uppercase tracking-wider text-slate-300">Projects</h2>
+                    <li className="mb-3"><h2 className="text-orange-500 font-bold uppercase tracking-wider">Projects</h2>
                     </li>
-                    <li><Link className="block py-1 sm:py-0" href='/projects/cashback-python'>Cashback</Link></li>
-                    <li><Link className="block py-1 sm:py-0" href='/projects/custard'>Custard</Link></li>
-                    <li><Link className="block py-1 sm:py-0" href='/projects/custard-app'>Custard App</Link></li>
-                    <li><Link className="block py-1 sm:py-0" href='/projects/ohmydosh'>OhMyDosh</Link></li>
+                    {sortedProjects(6).map(([slug, project]) => (
+                        <li key={slug} className="block py-1 sm:py-0"><Link
+                            href={'/projects/' + slug}>{project.name}</Link></li>
+                    ))}
                     <li><Link className="block py-1 sm:py-0" href='/projects'>See All</Link></li>
                 </ul>
                 {/*<ul className="flex flex-col">*/}
@@ -33,7 +34,7 @@ export default function Footer() {
                 {/*    <li></li>*/}
                 {/*</ul>*/}
                 <ul className="flex flex-col text-center sm:text-start">
-                    <li className="mb-3"><h2 className="font-bold uppercase tracking-wider text-slate-300">Sites</h2>
+                    <li className="mb-3"><h2 className="font-bold uppercase tracking-wider text-orange-500">Sites</h2>
                     </li>
                     <li><a href="https://www.travel-rates.com" className="block py-1 sm:py-0">Travel Rates</a></li>
                     <li><a href="https://www.tickitreminders.com" className="block py-1 sm:py-0">TickIt Reminders</a>
