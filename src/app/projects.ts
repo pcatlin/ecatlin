@@ -126,4 +126,28 @@ export const projects: ProjectsMap = {
             {name: "Swiper", stackType: "frontend", description: "JS Carousels"},
         ]
     },
+    "cashback-php": {
+        name: "Cashback (2022)",
+        description: "The same as Cashback that we know and love, but running on a different Tech Stack",
+        colour: "oklab(0.7 -0.1 0.03)",
+        dt_start: new Date('2022-06-27'),
+        dt_end: new Date('2025-01-14'),
+        tech: [
+            {name: "React", stackType: "frontend", primary: true},
+            {name: "JavaScript", stackType: "frontend"},
+            {name: "HTML", stackType: "frontend"},
+            {name: "SCSS", stackType: "frontend"},
+            {name: "CSS", stackType: "frontend"},
+            {name: "PHP", stackType: "backend", primary: true},
+            {name: "MySQL", stackType: "backend", primary: true},
+            {name: "Docker", stackType: "infrastructure"},
+            {name: "Kubernetes", stackType: "infrastructure", primary: true},
+            {name: "yarn", stackType: "infrastructure"},
+            {name: "Node", stackType: "backend"},
+            {name: "Git", description: "Version Control", stackType: "infrastructure"},
+            {name: "GitHub", description: "Cloud Version Control", stackType: "infrastructure"},
+            {name: "GitHub Actions", stackType: "infrastructure"},
+            {name: "Font Awesome", stackType: "tools"},
+        ],
+    }
 }

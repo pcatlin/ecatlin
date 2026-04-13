@@ -1,16 +1,18 @@
 'use client';
 
-import { useSelectedLayoutSegment } from "next/navigation";
-import { cashbackPythonSidebar } from "./cashback-python/sidebar";
-import {CustardGiftCardsSidebar} from "./custard-app/sidebar";
-import {CustardSidebar} from "./custard/sidebar";
-import {OhMyDoshSidebar} from "@/app/(general)/projects/(project)/ohmydosh/sidebar";
+import {useSelectedLayoutSegment} from "next/navigation";
+import {cashbackPythonSidebar} from "./cashback-python/sidebar";
+import {custardGiftCardsSidebar} from "./custard-app/sidebar";
+import {custardSidebar} from "./custard/sidebar";
+import {ohMyDoshSidebar} from "./ohmydosh/sidebar";
+import {cashbackPhpSidebar} from "./cashback-php/sidebar";
 
 const sidebarLinksByProject = {
     "cashback-python": cashbackPythonSidebar,
-    "custard-app": CustardGiftCardsSidebar,
-    "custard": CustardSidebar,
-    "ohmydosh": OhMyDoshSidebar,
+    "custard-app": custardGiftCardsSidebar,
+    "custard": custardSidebar,
+    "ohmydosh": ohMyDoshSidebar,
+    "cashback-php": cashbackPhpSidebar,
 } as const;
 
 export default function ProjectSidebar() {
