@@ -17,8 +17,16 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
+    metadataBase: new URL("https://www.ecatlin.com"),
     title: "eCatlin",
     description: "Showcasing the projects and work of Paul Catlin, along with some top tips along the way",
+    openGraph: {
+        siteName: "eCatlin",
+        type: "website",
+    },
+    twitter: {
+        card: "summary",
+    },
 }
 
 export default function RootLayout({children}: Readonly<{ children: ReactNode; }>) {
