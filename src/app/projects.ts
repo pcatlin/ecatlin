@@ -13,7 +13,6 @@ export function sortedProjects(limit?: number) {
         .slice(0, limit)
 }
 
-
 export function projectMetadata(slug: string): Metadata {
     const project = projects[slug]
     return {
@@ -170,5 +169,18 @@ export const projects: ProjectsMap = {
             {name: "GitHub Actions", stackType: "infrastructure"},
             {name: "Font Awesome", stackType: "tools"},
         ],
-    }
+    },
+    "travel-rates": {
+        name: "Travel Rates",
+        description: "Find out how much your money can buy you, using this Awesome App for Android and iPhone",
+        colour: "oklab(0.61 0.25 -0.02)",
+        dt_start: new Date('2023-03-20'),
+        tech: [
+            {name: "React Native", stackType: "frontend", primary: true},
+            {name: "Expo", stackType: "backend", primary: true},
+            {name: "API", stackType: "frontend"},
+            {name: "Google AdMob", stackType: "frontend"},
+            {name: "npm", stackType: "infrastructure"},
+        ],
+    },
 }

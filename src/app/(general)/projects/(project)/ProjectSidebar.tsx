@@ -6,6 +6,7 @@ import {custardGiftCardsSidebar} from "./custard-app/sidebar";
 import {custardSidebar} from "./custard/sidebar";
 import {ohMyDoshSidebar} from "./ohmydosh/sidebar";
 import {cashbackPhpSidebar} from "./cashback-php/sidebar";
+import {travelRatesSidebar} from "./travel-rates/sidebar";
 
 const sidebarLinksByProject = {
     "cashback-python": cashbackPythonSidebar,
@@ -13,6 +14,7 @@ const sidebarLinksByProject = {
     "custard": custardSidebar,
     "ohmydosh": ohMyDoshSidebar,
     "cashback-php": cashbackPhpSidebar,
+    "travel-rates": travelRatesSidebar,
 } as const;
 
 export default function ProjectSidebar() {
