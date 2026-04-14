@@ -248,7 +248,8 @@ export const projects: ProjectsMap = {
         ],
         sidebar: [
             {href: "#what-is-it", label: "What is the Smart Alarm Clock?"},
-            {href: "#how-to-do-it", label: "How to do it"},
+            {href: "#integrations", label: "Home Assistant Integrations"},
+            {href: "#alarm-automation", label: "Alarm Automation"},
             {href: "#tech-stack", label: "Tech Stack"},
         ]
     }
