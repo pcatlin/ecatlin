@@ -217,4 +217,22 @@ export const projects: ProjectsMap = {
             { href: "#tech-stack", label: "Tech Stack" },
         ]
     },
+    "tickit-cards": {
+        name: "TickIt Cards",
+        description: "Remember your forgotten gift cards with notifications from this free App",
+        colour: "oklab(0.82 0.03 0.17)",
+        dt_start: new Date('2025-05-07'),
+        tech: [
+            {name: "React Native", stackType: "frontend", primary: true},
+            {name: "Expo", stackType: "backend", primary: true},
+            {name: "TypeScript", stackType: "backend"},
+            {name: "Tailwind", stackType: "frontend"},
+            {name: "Google AdMob", stackType: "frontend"},
+            {name: "npm", stackType: "infrastructure"},
+        ],
+        sidebar: [
+            { href: "#what-is-it", label: "What is TickIt Cards?"},
+            { href: "#tech-stack", label: "Tech Stack" },
+        ]
+    }
 }
