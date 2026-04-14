@@ -18,6 +18,6 @@ export type Project = {
 export type Tech = {
     name: string,
     description?: string,
-    stackType: "frontend" | "backend" | "infrastructure" | "tools",
+    stackType?: "frontend" | "backend" | "infrastructure" | "tools",
     primary?: boolean,
 }

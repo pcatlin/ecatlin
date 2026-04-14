@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type {Metadata} from "next";
 import {ProjectsMap} from "@/app/types";
 
 export function sortedProjects(limit?: number) {
@@ -65,12 +65,12 @@ export const projects: ProjectsMap = {
             {name: "Bulma", description: "CSS utilities (used in admin)", stackType: "frontend"},
         ],
         sidebar: [
-            { href: "#what-is-cashback", label: "What is Cashback.co.uk" },
-            { href: "#optimal-images", label: "Optimal images" },
-            { href: "#container-based-card-layout", label: "Container based Card layout" },
-            { href: "#blurred-background-card-images", label: "Blurred background card images" },
-            { href: "#admin-changelog", label: "Admin Changelog" },
-            { href: "#tech-stack", label: "Tech Stack" },
+            {href: "#what-is-cashback", label: "What is Cashback.co.uk"},
+            {href: "#optimal-images", label: "Optimal images"},
+            {href: "#container-based-card-layout", label: "Container based Card layout"},
+            {href: "#blurred-background-card-images", label: "Blurred background card images"},
+            {href: "#admin-changelog", label: "Admin Changelog"},
+            {href: "#tech-stack", label: "Tech Stack"},
         ],
     },
     "custard": {
@@ -105,11 +105,11 @@ export const projects: ProjectsMap = {
             {name: "Bulma", stackType: "frontend", description: "CSS utilities (used in admin)"},
         ],
         sidebar: [
-            { href: "#what-is-it", label: "What is it?" },
-            { href: "#accessible-keyboard-navigation", label: "Accessible Keyboard Navigation" },
-            { href: "#savings-calculator", label: "Savings Calculator" },
-            { href: "#admin-changelog", label: "Admin Changelog" },
-            { href: "#tech-stack", label: "Tech Stack" },
+            {href: "#what-is-it", label: "What is it?"},
+            {href: "#accessible-keyboard-navigation", label: "Accessible Keyboard Navigation"},
+            {href: "#savings-calculator", label: "Savings Calculator"},
+            {href: "#admin-changelog", label: "Admin Changelog"},
+            {href: "#tech-stack", label: "Tech Stack"},
         ],
     },
     "custard-app": {
@@ -133,9 +133,9 @@ export const projects: ProjectsMap = {
             {name: "OneSignal", stackType: "frontend"},
         ],
         sidebar: [
-            { href: "#what-is-it", label: "What is it?" },
-            { href: "#savings-calculator", label: "Savings Calculator" },
-            { href: "#tech-stack", label: "Tech Stack" },
+            {href: "#what-is-it", label: "What is it?"},
+            {href: "#savings-calculator", label: "Savings Calculator"},
+            {href: "#tech-stack", label: "Tech Stack"},
         ],
     },
     "ohmydosh": {
@@ -166,9 +166,9 @@ export const projects: ProjectsMap = {
             {name: "Swiper", stackType: "frontend", description: "JS Carousels"},
         ],
         sidebar: [
-            { href: "#what-was-it", label: "What was OhMyDosh?" },
-            { href: "#improved-relaunch", label: "Improved Relaunch" },
-            { href: "#tech-stack", label: "Tech Stack" },
+            {href: "#what-was-it", label: "What was OhMyDosh?"},
+            {href: "#improved-relaunch", label: "Improved Relaunch"},
+            {href: "#tech-stack", label: "Tech Stack"},
         ],
     },
     "cashback-php": {
@@ -195,9 +195,9 @@ export const projects: ProjectsMap = {
             {name: "Font Awesome", stackType: "tools"},
         ],
         sidebar: [
-            { href: "#what-is-cashback", label: "What is Cashback.co.uk" },
-            { href: "#kubernetes-stack", label: "Kubernetes Stack" },
-            { href: "#tech-stack", label: "Tech Stack" },
+            {href: "#what-is-cashback", label: "What is Cashback.co.uk"},
+            {href: "#kubernetes-stack", label: "Kubernetes Stack"},
+            {href: "#tech-stack", label: "Tech Stack"},
         ],
     },
     "travel-rates": {
@@ -213,8 +213,8 @@ export const projects: ProjectsMap = {
             {name: "npm", stackType: "infrastructure"},
         ],
         sidebar: [
-            { href: "#what-is-it", label: "What is the Travel Rates App?" },
-            { href: "#tech-stack", label: "Tech Stack" },
+            {href: "#what-is-it", label: "What is the Travel Rates App?"},
+            {href: "#tech-stack", label: "Tech Stack"},
         ]
     },
     "tickit-cards": {
@@ -231,8 +231,25 @@ export const projects: ProjectsMap = {
             {name: "npm", stackType: "infrastructure"},
         ],
         sidebar: [
-            { href: "#what-is-it", label: "What is TickIt Cards?"},
-            { href: "#tech-stack", label: "Tech Stack" },
+            {href: "#what-is-it", label: "What is TickIt Cards?"},
+            {href: "#tech-stack", label: "Tech Stack"},
+        ],
+    },
+    "alarm-clock": {
+        name: "Smart Alarm Clock",
+        description: "Would you like your alarm clock to be a reliable as you are? This one is. It's a smart alarm clock that avoids bank holidays.",
+        colour: "oklab(0.88 -0.12 -0.05)",
+        dt_start: new Date('2024-03-01'),
+        tech: [
+            {name: "Home Assistant", primary: true},
+            {name: "Sonos", primary: true},
+            {name: "Google Calendar"},
+            {name: "Android"},
+        ],
+        sidebar: [
+            {href: "#what-is-it", label: "What is the Smart Alarm Clock?"},
+            {href: "#how-to-do-it", label: "How to do it"},
+            {href: "#tech-stack", label: "Tech Stack"},
         ]
     }
 }
