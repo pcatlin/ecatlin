@@ -3,6 +3,7 @@ const styles = {
     link: "text-accent hover:underline font-bold",
     linkSubtle: "hover:underline",
     button: "bg-accent text-slate-900 flex items-center w-fit ml-auto px-3 py-2 rounded-lg transition-shadow shadow-md hover:shadow-lg",
+    container: "max-w-7xl mx-auto px-8",
 } as const
 
 export default styles
