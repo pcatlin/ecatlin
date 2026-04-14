@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import {sortedProjects} from "@/app/projects";
+import styles from "@/app/styles";
 
 export default function Footer() {
     return (
@@ -22,10 +23,10 @@ export default function Footer() {
                     <li className="mb-3"><h2 className="text-orange-500 font-bold uppercase tracking-wider">Projects</h2>
                     </li>
                     {sortedProjects(6).map(([slug, project]) => (
-                        <li key={slug} className="block py-1 sm:py-0"><Link
+                        <li key={slug} className="block py-1 sm:py-0"><Link className={styles.linkSubtle}
                             href={'/projects/' + slug}>{project.name}</Link></li>
                     ))}
-                    <li><Link className="block py-1 sm:py-0" href='/projects'>See All</Link></li>
+                    <li><Link className={styles.linkSubtle + " block py-1 sm:py-0"} href='/projects'>See All</Link></li>
                 </ul>
                 {/*<ul className="flex flex-col">*/}
                 {/*    <li><h2>Top Tips</h2></li>*/}
@@ -36,8 +37,8 @@ export default function Footer() {
                 <ul className="flex flex-col text-center sm:text-start">
                     <li className="mb-3"><h2 className="font-bold uppercase tracking-wider text-orange-500">Sites</h2>
                     </li>
-                    <li><a href="https://www.travel-rates.com" className="block py-1 sm:py-0">Travel Rates</a></li>
-                    <li><a href="https://www.tickitreminders.com" className="block py-1 sm:py-0">TickIt Reminders</a>
+                    <li><a href="https://www.travel-rates.com" className={styles.linkSubtle + " block py-1 sm:py-0"}>Travel Rates</a></li>
+                    <li><a href="https://www.tickitreminders.com" className={styles.linkSubtle + " block py-1 sm:py-0"}>TickIt Reminders</a>
                     </li>
                 </ul>
             </div>

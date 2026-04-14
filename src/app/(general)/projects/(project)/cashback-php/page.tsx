@@ -1,6 +1,7 @@
 import {projectMetadata, projects} from "@/app/projects";
 import TechStack from "@/app/components/shared-features/TechStack";
 import {Metadata} from "next";
+import styles from "@/app/styles";
 
 const slug = "cashback-php";
 
@@ -10,7 +11,6 @@ export function generateMetadata(): Metadata {
 
 export default function CashbackPhp() {
     const {tech} = projects[slug] || null
-    const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 
     return (
         <article>
@@ -21,7 +21,7 @@ export default function CashbackPhp() {
                 />
             </div>
 
-            <h1 className={h2_classes} id="what-is-cashback">What is Cashback.co.uk</h1>
+            <h1 className={styles.h2} id="what-is-cashback">What is Cashback.co.uk</h1>
             <p>
                 Cashback is a (kind of) successor to the popular 20 cogs site. The idea is that users chose from a
                 small list of tasks to complete. These could be offers, surveys or simply to sign up to a site. They
@@ -30,7 +30,7 @@ export default function CashbackPhp() {
                 built up earnings by bank transfer or paypal!
             </p>
 
-            <h2 className={h2_classes} id="kubernetes-stack">Kubernetes Stack</h2>
+            <h2 className={styles.h2} id="kubernetes-stack">Kubernetes Stack</h2>
             <p>
                 Cashback was built from scratch on new technologies at the time. Using a Kubernetes cluster of 9 nodes
                 and 3 database servers to improve reliability and support huge traffic demands.

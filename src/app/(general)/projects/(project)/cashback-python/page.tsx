@@ -3,6 +3,7 @@ import AdminChangeLog from "@/app/components/shared-features/AdminChangeLog";
 import TechStack from "@/app/components/shared-features/TechStack";
 import {projects, projectMetadata} from "@/app/projects";
 import {Metadata} from "next";
+import styles from "@/app/styles";
 
 const slug = "cashback-python";
 
@@ -12,7 +13,6 @@ export function generateMetadata(): Metadata {
 
 export default function CashbackPython() {
     const {tech} = projects[slug] || null
-    const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 
     return (
         <article>
@@ -23,7 +23,7 @@ export default function CashbackPython() {
                 />
             </div>
 
-            <h1 className={h2_classes} id="what-is-cashback">What is Cashback.co.uk</h1>
+            <h1 className={styles.h2} id="what-is-cashback">What is Cashback.co.uk</h1>
 
             <div className="flex flex-col-reverse lg:flex-row gap-5">
                 <div className="">
@@ -39,7 +39,7 @@ export default function CashbackPython() {
 
                     <p className="mb-3">I worked on most of the frontend of this site, making it look
                         similar to
-                        it&apos;s <Link href="/projects/cashback-php" className="text-orange-500">previous
+                        it&apos;s <Link href="/projects/cashback-php" className={styles.link}>previous
                             incantation</Link>,
                         but in jinja2 and javascript instead.
                         There were a few differences with the old cashback frontend though:</p>
@@ -62,7 +62,7 @@ export default function CashbackPython() {
                 </div>
             </div>
 
-            <h2 className={h2_classes} id="optimal-images">Optimal images</h2>
+            <h2 className={styles.h2} id="optimal-images">Optimal images</h2>
 
             <p>All images are saved in
                 the <span className="font-bold text-accent">svg</span> or <span
@@ -73,7 +73,7 @@ export default function CashbackPython() {
                 network
                 connection is not always available.</p>
             <p>I used <a href="https://squoosh.app" target="_blank"
-                         className="text-orange-400">squoosh.app</a> to
+                         className={styles.link}>squoosh.app</a> to
                 convert and compress the images to webp.
                 It is a nice site that shows the image quality and possible space savings that you can
                 achieve.</p>
@@ -84,7 +84,7 @@ export default function CashbackPython() {
                 With its awesome caching and global servers.</p>
 
 
-            <h2 className={h2_classes} id="container-based-card-layout">Container based Card layout</h2>
+            <h2 className={styles.h2} id="container-based-card-layout">Container based Card layout</h2>
 
             <p>The layout uses a flexible container system that transitions seamlessly between mobile
                 and
@@ -92,7 +92,7 @@ export default function CashbackPython() {
                 layout,
                 using a mobile-first CSS approach</p>
 
-            <h2 className={h2_classes} id="blurred-background-card-images">Blurred Background Card
+            <h2 className={styles.h2} id="blurred-background-card-images">Blurred Background Card
                 Images</h2>
 
             <p>When the text and other contents for a &quot;task card&quot; is larger than anticipated,
@@ -100,7 +100,7 @@ export default function CashbackPython() {
                 bottom, filling the available space. This is achieved by displaying a copy of the card behind
                 the original image with a blur filter applied.</p>
 
-            <h2 className={h2_classes}>My Activity section - Async fetching and animation</h2>
+            <h2 className={styles.h2}>My Activity section - Async fetching and animation</h2>
 
             <p>To speed up the page for users with a lot of activity. I built this page to paginate the
                 activity and allow you to choose from various categories of activity. It fetches the data

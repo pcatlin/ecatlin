@@ -2,6 +2,7 @@ import Link from "next/link";
 import TechStack from "@/app/components/shared-features/TechStack";
 import {projectMetadata, projects} from "@/app/projects";
 import {Metadata} from "next";
+import styles from "@/app/styles";
 
 const slug = "ohmydosh"
 
@@ -11,7 +12,6 @@ export function generateMetadata(): Metadata {
 
 export default function OhMyDosh() {
     const {tech} = projects[slug] || null
-    const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 
     return (
         <article>
@@ -23,10 +23,10 @@ export default function OhMyDosh() {
                 />
             </div>
 
-            <h2 className={h2_classes} id="what-was-it">What was OhMyDosh</h2>
+            <h2 className={styles.h2} id="what-was-it">What was OhMyDosh</h2>
             <p>
                 OhMyDosh was very similar
-                to <Link href="/projects/custard" className="text-accent">Custard</Link> (but came first).
+                to <Link href="/projects/custard" className={styles.link}>Custard</Link> (but came first).
                 OhMyDosh was a website that gave the user
                 cashback for taking offers and signing up for subscriptions and stuff.
                 It never offered as many useful offers as other sites like
@@ -34,7 +34,7 @@ export default function OhMyDosh() {
                 was doomed.
             </p>
 
-            <h2 className={h2_classes} id="improved-relaunch">Improved Relaunch</h2>
+            <h2 className={styles.h2} id="improved-relaunch">Improved Relaunch</h2>
             <p>
                 OMD was relaunched on the Kubernetes stack that Cashback was running on. We improved some of the
                 frontend issues with Cashback for this site though with a refreshed frontend Tech Stack:

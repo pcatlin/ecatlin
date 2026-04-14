@@ -2,6 +2,8 @@
 
 import {useSelectedLayoutSegment} from "next/navigation";
 import {projects} from "@/app/projects";
+import Link from "next/link";
+import styles from "@/app/styles";
 
 export default function ProjectSidebar() {
     const slug = useSelectedLayoutSegment();
@@ -17,9 +19,9 @@ export default function ProjectSidebar() {
                 Table of Contents
             </h2>
             {links.map((link) => (
-                <a key={link.href} href={`/projects/${slug}${link.href}`}>
+                <Link key={link.href} href={`/projects/${slug}${link.href}`} className={styles.linkSubtle}>
                     {link.label}
-                </a>
+                </Link>
             ))}
         </nav>
     );

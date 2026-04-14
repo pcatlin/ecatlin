@@ -1,5 +1,6 @@
 import {Project} from "@/app/types";
 import Link from "next/link";
+import {CSSProperties} from "react";
 
 type Props = Project & {
     slug: string
@@ -14,8 +15,11 @@ export default function ProjectCard({name, colour, description, dt_start, dt_end
     }
 
     return (
-        <Link href={`/projects/${slug}`} className="text-black">
-            <article className="rounded-xl bg-slate-100 border-4 shadow-lg" style={{borderColor: colour}}>
+        <Link href={`/projects/${slug}`}
+              className="text-black"
+              style={{ "--project-colour": colour } as CSSProperties}
+        >
+            <article className="rounded-xl bg-slate-100 shadow-lg border-4 border-(--project-colour) hover:border-black hover:shadow-sm transition-all">
                 <div className="flex">
                     <img src={"/images/" + slug + "/logo.png"} alt={name + " logo"}
                          className="rounded-tl-lg rounded-br-3xl w-25 h-25"

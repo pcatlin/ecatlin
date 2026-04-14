@@ -1,9 +1,9 @@
-export default function SavingsCalculator() {
-    const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
+import styles from "@/app/styles";
 
+export default function SavingsCalculator() {
     return (
         <>
-            <h2 className={h2_classes} id="savings-calculator">Savings Calculator</h2>
+            <h2 className={styles.h2} id="savings-calculator">Savings Calculator</h2>
 
             <p>I created a nifty savings calculator tool for both Custard and the Custard App.
                 It allows users to select various categories of products to estimate how much money the Custard App

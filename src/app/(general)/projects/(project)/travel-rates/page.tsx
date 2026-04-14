@@ -1,6 +1,7 @@
 import {projectMetadata, projects} from "@/app/projects";
 import TechStack from "@/app/components/shared-features/TechStack";
 import {Metadata} from "next";
+import styles from "@/app/styles";
 
 const slug = "travel-rates";
 
@@ -10,7 +11,6 @@ export function generateMetadata(): Metadata {
 
 export default function TravelRates() {
     const {tech} = projects[slug] || null
-    const h2_classes = "text-orange-500 font-bold text-3xl mt-30 mb-10"
 
     return (
         <article>
@@ -22,7 +22,7 @@ export default function TravelRates() {
                 />
             </div>
 
-            <h1 className={h2_classes} id="what-is-it">What is the Travel Rates App?</h1>
+            <h1 className={styles.h2} id="what-is-it">What is the Travel Rates App?</h1>
             <p>
                 Travel Rates is a free React Native (Expo) app for Android and iOS that shows you exchange rate
                 conversions from one currency to another.
