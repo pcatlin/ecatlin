@@ -8,8 +8,7 @@ export default function Projects() {
 
             <section className="mb-15 bg-slate-600 p-5">
                 <div className="mx-auto max-w-7xl">
-                    <div className="px-5 py-5 grid gap-5"
-                         style={{gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))"}}>
+                    <div className="px-5 py-5 grid gap-5 grid-cols-[repeat(auto-fit,minmax(250px,1fr))] md:grid-cols-[repeat(auto-fit,minmax(310px,1fr))]">
                         {sortedProjects().map(([slug, project]) => (
                             <ProjectCard key={slug} slug={slug} {...project} />
                         ))}
