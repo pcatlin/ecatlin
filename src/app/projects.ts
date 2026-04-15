@@ -252,5 +252,67 @@ export const projects: ProjectsMap = {
             {href: "#alarm-automation", label: "Alarm Automation"},
             {href: "#tech-stack", label: "Tech Stack"},
         ]
+    },
+    "garden-water": {
+        name: "Garden Watering System",
+        description: "Lets us set a schedule to turn on the tap to water the garden",
+        colour: "oklab(0.8 -0.09 0.16)",
+        dt_start: new Date('2023-05-31'),
+        tech: [
+            {name: "Home Assistant", primary: true},
+            {name: "Plumbing", primary: true},
+        ],
+        sidebar: [
+            {href: "#what-is-it", label: "What is the Garden Watering System?"},
+            {href: "#automation", label: "Automation"},
+            {href: "#tech-stack", label: "Tech Stack"},
+        ]
+    },
+    "garden-grass": {
+        name: "Garden Grass Makeover",
+        description: "Renovate the garden. Remove all the raised beds. Extend the patio. Lay some grass. How hard can it be?",
+        colour: "oklab(0.8 -0.09 0.16)",
+        dt_start: new Date('2024-05-25'),
+        dt_end: new Date('2024-08-09'),
+        tech: [
+            {name: "Demolition", primary: true},
+            {name: "Brick laying", primary: true},
+            {name: "Gardening", primary: true},
+        ],
+        sidebar: [
+            {href: "#what-is-it", label: "What is the Garden Grass Makeover?"},
+            {href: "#tech-stack", label: "Tech Stack"},
+        ]
+    },
+    "arcade": {
+        name: "Retro Arcade",
+        description: "Playing retro games from various systems on my Arcade cabinet",
+        colour: "oklch(0.61 0.25 330.69)",
+        dt_start: new Date('2024-04-26'),
+        dt_end: new Date('2024-06-30'),
+        tech: [
+            {name: "LaunchBox", primary: true},
+            {name: "JoyToKey", primary: true},
+        ],
+        sidebar: [
+            {href: "#what-is-it", label: "What is the Retro Arcade?"},
+            {href: "#tech-stack", label: "Tech Stack"},
+        ]
+    },
+    "arcade-joystick": {
+        name: "Arcade Joystick",
+        description: "A custom made USB arcade style joystick controller",
+        colour: "oklch(0.62 0.24 28.23)",
+        dt_start: new Date('2015-12-01'),
+        dt_end: new Date('2016-01-23'),
+        tech: [
+            {name: "AutoCAD", primary: true},
+            {name: "Joinery", primary: true},
+            {name: "JoyToKey", primary: true},
+        ],
+        sidebar: [
+            {href: "#what-is-it", label: "What is the Arcade Joystick?"},
+            {href: "#tech-stack", label: "Tech Stack"},
+        ]
     }
 }
