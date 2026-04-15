@@ -31,7 +31,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({children}: Readonly<{ children: ReactNode; }>) {
     return (
-        <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased scroll-smooth`}>
+        <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <body className="font-sans bg-sky-950 text-slate-300">
         <Script src="https://kit.fontawesome.com/aaef8f0e02.js" crossOrigin="anonymous" strategy="beforeInteractive"></Script>
         <div className="flex flex-col flex-1 min-h-svh">

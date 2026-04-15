@@ -35,7 +35,7 @@ export default function ProjectCard({name, colour, description, dt_start, dt_end
                             {tech.filter(t => t.primary).map(t => t.name).join(", ")}
                         </p>
                     )}
-                    <p className="">{dateRange}</p>
+                    <p className="whitespace-nowrap">{dateRange}</p>
                 </div>
             </article>
         </Link>
