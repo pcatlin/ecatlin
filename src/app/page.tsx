@@ -5,7 +5,7 @@ import styles from "@/app/styles";
 
 export default function Home() {
     return (
-        <main className="grow py-8">
+        <main className="grow pt-8">
             <section className="mx-5 text-center mb-15">
                 <h1 className="flex flex-col text-5xl text-orange-500">Paul Catlin
                     <span className="font-light text-3xl">Projects and Rememberings</span>
@@ -27,7 +27,7 @@ export default function Home() {
                 </div>
             </section>
 
-            <section className="mb-15 bg-slate-300 px-5 py-10">
+            <section className="bg-slate-300 px-5 py-10">
                 <div className="mx-auto max-w-7xl">
                     <h2 className="text-sky-950 font-bold text-center text-3xl mb-10">Recent Projects</h2>
                     <RecentProjects/>

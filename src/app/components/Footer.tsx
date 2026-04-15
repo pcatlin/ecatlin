@@ -4,7 +4,7 @@ import styles from "@/app/styles";
 
 export default function Footer() {
     return (
-        <footer className="text-slate-200 pb-8">
+        <footer className="text-slate-200 bg-slate-900 pt-20 pb-8">
             <div className="flex flex-col sm:flex-row items-center justify-around gap-10 mb-5">
                 <div className="flex flex-col items-center justify-center gap-3 justify-self-start">
                     <Link href="/"><h2 className="font-display text-3xl text-slate-300">eCatlin</h2></Link>
