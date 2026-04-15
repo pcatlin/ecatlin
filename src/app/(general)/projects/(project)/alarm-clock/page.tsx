@@ -37,11 +37,22 @@ export default function AlarmClock() {
                 <li><strong>Phone</strong> - Repetitive sounds</li>
                 <li><strong>Sonos</strong> -  Unreliable. Sometimes the alarm radio doesn&apos;t play, so it alerts with a boring fallback beep</li>
                 <li><strong>Traditional</strong> -  Both of the above!</li>
+                <li><strong>All alarms</strong> -  When a bank holiday or day off comes around, you have to remember
+                    to turn the alarm off and back on again afterwards!</li>
             </ul>
             <p>
-                Also when a bank holiday or real holiday comes around. You have to remember to turn off
-                (and back again) the alarm!
+                In an attempt to fix these problems, my alarm clock will:
             </p>
+            <ul className="ml-3 pl-5 mb-5 list-disc">
+                <li>Not trigger at weekends and bank holidays</li>
+                <li>Not trigger if I&apos;m not at home</li>
+                <li>Not trigger on days off work (all day calendar event)</li>
+                <li>Will trigger on a different time when I set a calendar event (not all day event)</li>
+                <li>Will play the radio</li>
+                <li>If the radio can&apos;t play for some reason, it will play other music</li>
+                <li>Will slowly fade up when starting</li>
+                <li>Will also trigger my phone alarm to go off after 15 minutes of initial alarm start</li>
+            </ul>
 
 
             <h2 className={styles.h2} id="integrations">Home Assistant Integrations</h2>

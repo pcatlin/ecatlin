@@ -240,6 +240,7 @@ export const projects: ProjectsMap = {
         description: "Would you like your alarm clock to be a reliable as you are? This one is. It's a smart alarm clock that avoids bank holidays.",
         colour: "oklab(0.88 -0.12 -0.05)",
         dt_start: new Date('2024-03-01'),
+        dt_end: new Date('2024-08-01'),
         tech: [
             {name: "Home Assistant", primary: true},
             {name: "Sonos", primary: true},
