@@ -12,7 +12,7 @@ export default function Breadcrumbs() {
     const projectName = slug ? (projects[slug]?.name ?? slug) : undefined
 
     return (
-        <nav className={styles.container + " w-full breadcrumbs text-sm mb-6"}>
+        <nav className={styles.container + " w-full breadcrumbs"}>
             <ul>
                 <li><Link href="/">Home</Link></li>
                 {segments[0] === 'projects' && (
