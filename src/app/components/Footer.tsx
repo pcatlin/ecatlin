@@ -43,7 +43,7 @@ export default function Footer() {
                 </ul>
             </div>
             <p className="mx-auto text-sm text-center text-slate-400">
-                &copy; {new Date().getFullYear()} eCatlin. All rights reserved.
+                &copy; {new Date().getFullYear()} Paul Catlin. All rights reserved.
             </p>
         </footer>
     )
