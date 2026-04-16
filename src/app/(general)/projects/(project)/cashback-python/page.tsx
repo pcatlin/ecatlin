@@ -108,7 +108,7 @@ export default function CashbackPython() {
                 There is also a cute little animated padlock that rotates when you cannot cash out yet.
                 A nice touch.</p>
             <video src="/images/cashback-python/cashout-animation.mp4"
-                   playsInline loop muted autoPlay
+                   preload="metadata" playsInline loop muted autoPlay
                    width="586" height="374"
                    className="rounded-xl mx-auto mt-5"
             />

@@ -214,6 +214,8 @@ export const projects: ProjectsMap = {
         ],
         sidebar: [
             {href: "#what-is-it", label: "What is the Travel Rates App?"},
+            {href: "#resilient-data", label: "Resilient Data"},
+            {href: "#speedy-slider", label: "Speedy Slider"},
             {href: "#tech-stack", label: "Tech Stack"},
         ]
     },
