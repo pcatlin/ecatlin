@@ -1,0 +1,25 @@
+.recentProjects {
+    container-type: inline-size;
+
+    /* 1 column: show 6 */
+    & > a:nth-child(n+7) {
+        display: none;
+    }
+
+    /* 2 columns: show 8 */
+    @container (width >= 520px) {
+        & > a:nth-child(n+7) {
+            display: block;
+        }
+        & > a:nth-child(n+9) {
+            display: none;
+        }
+    }
+
+    /* 3 columns: show 9 */
+    @container (width >= 970px) {
+        & > a:nth-child(n+9) {
+            display: block;
+        }
+    }
+}
