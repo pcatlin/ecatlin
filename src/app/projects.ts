@@ -232,6 +232,7 @@ export const projects: ProjectsMap = {
         ],
         sidebar: [
             {href: "#what-is-it", label: "What is TickIt Cards?"},
+            {href: "#notifications", label: "Notifications"},
             {href: "#tech-stack", label: "Tech Stack"},
         ],
     },
