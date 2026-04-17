@@ -1,8 +1,8 @@
 import type {Metadata} from "next";
-import {ProjectsMap} from "@/app/types";
+import {Project, ProjectsMap} from "@/app/types";
 
-export function sortedProjects(limit?: number) {
-    return Object.entries(projects)
+export function sortProjectEntries(entries: [string, Project][], limit?: number) {
+    return entries
         .sort(([, a], [, b]) => {
             if (!a.dt_end && !b.dt_end) return b.dt_start.getTime() - a.dt_start.getTime()
             if (!a.dt_end) return -1
@@ -11,6 +11,10 @@ export function sortedProjects(limit?: number) {
             return byEnd !== 0 ? byEnd : b.dt_start.getTime() - a.dt_start.getTime()
         })
         .slice(0, limit)
+}
+
+export function sortedProjects(limit?: number) {
+    return sortProjectEntries(Object.entries(projects), limit)
 }
 
 export function projectMetadata(slug: string): Metadata {

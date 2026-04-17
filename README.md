@@ -17,16 +17,19 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the site running locally.
 
-## Smoke tests
+## Testing
 
 Install Chromium for Playwright:
-
 ```bash
 npm run test:e2e:install
 ```
 
-Run smoke tests:
+Run unit tests:
+```bash
+npm run test
+```
 
+Run end to end tests:
 ```bash
 npm run test:e2e
 ```
