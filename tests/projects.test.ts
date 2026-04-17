@@ -18,7 +18,7 @@ function entries(map: Record<string, Project>): [string, Project][] {
     return Object.entries(map)
 }
 
-// --- tests -------------------------------------------------------------------
+// --- tests-playwright -------------------------------------------------------------------
 
 describe("sortProjectEntries", () => {
     it("puts active projects (no dt_end) before ended projects", () => {

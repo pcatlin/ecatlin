@@ -4,7 +4,7 @@ import path from "path"
 export default defineConfig({
     test: {
         environment: "node",
-        exclude: ["tests/**", "node_modules/**"],
+        exclude: ["tests-playwright/**", "node_modules/**"],
     },
     resolve: {
         alias: {
