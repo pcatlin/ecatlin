@@ -31,5 +31,6 @@ test("unknown project route returns 404", async ({page}) => {
 
     expect(response).not.toBeNull();
     expect(response?.status()).toBe(404);
-    await expect(page.getByText(/(404|not found|could not be found)/i)).toBeVisible();
+    await expect(page.getByRole("heading", {level: 1, name: "404"})).toBeVisible();
+    await expect(page.getByRole("heading", {level: 2, name: "This page could not be found."})).toBeVisible();
 });
