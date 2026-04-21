@@ -36,6 +36,11 @@ export function projectMetadata(slug: string): Metadata {
     }
 }
 
+
+// this should obviously be stored in a database..
+// but to save hosting costs it's going here!
+// todo: move to relational db
+
 export const projects: ProjectsMap = {
     "cashback-python": {
         name: "Cashback",
