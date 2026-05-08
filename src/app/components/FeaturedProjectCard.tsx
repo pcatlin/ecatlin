@@ -12,7 +12,7 @@ const motionSafe =
 export default function FeaturedProjectCard({slug, project}: Props) {
     return (
         <div
-            className="group flex min-h-[25vh] items-center border-y border-white/5 px-5 py-10 text-inherit no-underline odd:bg-sky-900 even:bg-[rgb(8_47_73)]"
+            className="group flex min-h-[25vh] items-center overflow-x-clip border-y border-white/5 px-5 py-10 text-inherit no-underline odd:bg-sky-900 even:bg-[rgb(8_47_73)]"
         >
             <div
                 className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-12 lg:grid-cols-[5fr_7fr] lg:gap-20">
