@@ -327,5 +327,22 @@ export const projects: ProjectsMap = {
             {href: "#what-is-it", label: "What is the Arcade Joystick?"},
             {href: "#tech-stack", label: "Tech Stack"},
         ]
+    },
+    "player-picker": {
+        name: "Player Picker",
+        description: "An app to help you choose a player. Great for board game nights",
+        colour: "oklch(0.49 0.148 261.135)",
+        dt_start: new Date('2026-05-08'),
+        privacyNotice: true,
+        tech: [
+            {name: "React Native", stackType: "frontend", primary: true},
+            {name: "Expo", stackType: "tools"},
+            {name: "Cursor AI", stackType: "tools", primary: true},
+            {name: "RevenueCat", stackType: "infrastructure"},
+        ],
+        sidebar: [
+            {href: "#what-is-it", label: "What is the Player Picker?"},
+            {href: "#tech-stack", label: "Tech Stack"},
+        ]
     }
 }

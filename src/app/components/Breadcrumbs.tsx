@@ -18,6 +18,9 @@ export default function Breadcrumbs() {
                 {segments[0] === 'projects' && (
                     <li><Link href="/projects">Projects</Link></li>
                 )}
+                {segments[0] === 'privacy-notice' && (
+                    <li><Link href="/privacy-notice">Privacy Notice</Link></li>
+                )}
                 {projectName && <li>{projectName}</li>}
             </ul>
         </nav>

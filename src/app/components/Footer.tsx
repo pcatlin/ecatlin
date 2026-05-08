@@ -41,6 +41,11 @@ export default function Footer() {
                     <li><a href="https://www.tickitreminders.com" className={styles.linkSubtle + " block py-1 sm:py-0"}>TickIt Reminders</a>
                     </li>
                 </ul>
+
+                <ul className="flex flex-col text-center sm:text-start">
+                    <li className="mb-3"><h2 className="font-bold uppercase tracking-wider text-orange-500">Gumpf</h2></li>
+                    <li><Link href="/privacy-notice" className={styles.linkSubtle + " block py-1 sm:py-0"}>Privacy Notice</Link></li>
+                </ul>
             </div>
             <p className="mx-auto text-sm text-center text-slate-400">
                 &copy; {new Date().getFullYear()} Paul Catlin. All rights reserved.

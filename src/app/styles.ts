@@ -6,6 +6,7 @@ const styles = {
     linkSubtle: "hover:underline",
     button: "bg-accent text-slate-900 flex items-center w-fit ml-auto px-3 py-2 rounded-lg transition-shadow shadow-md hover:shadow-lg",
     container: "max-w-7xl mx-auto px-8",
+    termsH2: "text-orange-500 font-bold text-xl md:text-2xl mt-15 mb-5",
 } as const
 
 export default styles

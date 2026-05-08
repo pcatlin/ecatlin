@@ -13,6 +13,7 @@ export type Project = {
     colour?: string,
     tech?: Tech[],
     sidebar?: SidebarLink[],
+    privacyNotice?: boolean,
 }
 
 export type Tech = {
