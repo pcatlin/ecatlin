@@ -1,7 +1,10 @@
+import FeaturedProjects from "@/app/components/FeaturedProjects";
 import HomeCarousel from "@/app/components/HomeCarousel";
 import RecentProjects from "@/app/components/RecentProjects";
 import Link from "next/link";
 import styles from "@/app/styles";
+
+export const dynamic = "force-dynamic";
 
 export default function Home() {
     return (
@@ -26,6 +29,8 @@ export default function Home() {
                     </div>
                 </div>
             </section>
+
+            <FeaturedProjects />
 
             <section className="bg-slate-300 px-5 py-10">
                 <div className="mx-auto max-w-7xl">

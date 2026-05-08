@@ -346,3 +346,12 @@ export const projects: ProjectsMap = {
         ]
     }
 }
+
+export function randomProjects(count: number): [string, Project][] {
+    const entries = Object.entries(projects)
+    for (let i = entries.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1))
+        ;[entries[i], entries[j]] = [entries[j], entries[i]]
+    }
+    return entries.slice(0, count)
+}
