@@ -15,12 +15,13 @@ export default function PlayerPicker() {
 
     return (
         <article>
-            <div className="flex items-center justify-center gap-5">
-                <img src="/images/player-picker/logo.svg"
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-5">
+                <img src="/images/player-picker/logo.png"
                      alt="Player Picker logo"
-                     width="300" height="50"
-                     className="bg-white p-3 rounded-xl"
+                     width="192" height="192"
+                     className="rounded-3xl shadow-lg"
                 />
+                <h1 className="text-4xl font-bold text-orange-500 text-center">Player Picker</h1>
             </div>
 
             <h2 className={styles.h2} id="what-is-it">What is Player Picker</h2>
