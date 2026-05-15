@@ -14,6 +14,7 @@ export type Project = {
     tech?: Tech[],
     sidebar?: SidebarLink[],
     privacyNotice?: boolean,
+    github?: string,
 }
 
 export type Tech = {

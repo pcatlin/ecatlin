@@ -333,6 +333,7 @@ export const projects: ProjectsMap = {
         description: "An app to help you choose a player. Great for board game nights",
         colour: "oklch(0.49 0.148 261.135)",
         dt_start: new Date('2026-05-08'),
+        github: "https://github.com/pcatlin/player-picker",
         privacyNotice: true,
         tech: [
             {name: "React Native", stackType: "frontend", primary: true},
@@ -344,7 +345,47 @@ export const projects: ProjectsMap = {
             {href: "#what-is-it", label: "What is the Player Picker?"},
             {href: "#tech-stack", label: "Tech Stack"},
         ]
-    }
+    },
+    "plexamp-sonos-speed-dial": {
+        name: "Plexamp Sonos Speed Dial",
+        description: "Self-hosted web app: browse Plex, play on Plexamp headless, route audio to Sonos via Line-In—with speed-dial favourites and live controls.",
+        colour: "oklch(0.66 0.17 248.68)",
+        dt_start: new Date('2026-05-01'),
+        github: "https://github.com/pcatlin/plexamp-speed-dial",
+        tech: [
+            {name: "React", stackType: "frontend", primary: true},
+            {name: "TypeScript", stackType: "frontend", primary: true},
+            {name: "Vite", stackType: "frontend"},
+            {name: "Vitest", stackType: "frontend", description: "Frontend testing"},
+            {name: "Testing Library", stackType: "frontend"},
+            {name: "CSS", stackType: "frontend"},
+            {name: "Python", stackType: "backend", primary: true},
+            {name: "FastAPI", stackType: "backend", primary: true},
+            {name: "Uvicorn", stackType: "backend"},
+            {name: "Pydantic", stackType: "backend"},
+            {name: "SQLAlchemy", stackType: "backend"},
+            {name: "PostgreSQL", stackType: "backend", primary: true},
+            {name: "python-plexapi", stackType: "backend", description: "Plex Media Server"},
+            {name: "SoCo", stackType: "backend", description: "Sonos"},
+            {name: "httpx", stackType: "backend", description: "Plexamp companion API"},
+            {name: "OpenAPI", stackType: "tools", description: "Swagger at /docs"},
+            {name: "Docker Compose", stackType: "infrastructure", primary: true},
+            {name: "nginx", stackType: "infrastructure", description: "Static UI + reverse proxy"},
+            {name: "pytest", stackType: "backend", description: "Backend testing"},
+            {name: "pytest-asyncio", stackType: "backend"},
+        ],
+        sidebar: [
+            {href: "#what-is-it", label: "What is Plexamp Sonos Speed Dial?"},
+            {href: "#plexamp-sonos-line-in", label: "Plexamp → Sonos via Line-In"},
+            {href: "#pick-music-browsing", label: "Flexible pick music browsing"},
+            {href: "#speed-dial-favorites", label: "Speed dial favorites"},
+            {href: "#play-to", label: "Play to: speakers, players, presets"},
+            {href: "#live-playback-controls", label: "Live playback controls"},
+            {href: "#setup-and-plex-auth", label: "Setup and Plex auth"},
+            {href: "#pwa-deploy", label: "PWA and deploy"},
+            {href: "#tech-stack", label: "Tech Stack"},
+        ],
+    },
 }
 
 export function randomProjects(count: number): [string, Project][] {
