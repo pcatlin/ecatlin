@@ -23,7 +23,7 @@ export default function FeaturedProjectCard({slug, project}: Props) {
                     <img
                         src={`/images/${slug}/logo.png`}
                         alt={`${project.name} logo`}
-                        className="h-auto w-full max-w-64 object-contain drop-shadow-[0_8px_20px_rgb(0_0_0_/_0.25)]"
+                        className="h-auto w-full max-w-64 object-contain"
                         width={192}
                         height={192}
                     />
