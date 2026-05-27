@@ -47,6 +47,7 @@ export const projects: ProjectsMap = {
         description: "Popular ladder cashback site. Users need to complete tasks on 10 levels to cash out their earnings.",
         colour: "oklab(0.7 -0.1 0.03)",
         dt_start: new Date('2025-04-03'),
+        paid: true,
         tech: [
             {name: "Python", stackType: "backend", primary: true},
             {name: "Flask", description: "Python web framework", stackType: "backend"},
@@ -87,6 +88,7 @@ export const projects: ProjectsMap = {
         description: "Sweet modern site where users earn cashback for taking offers. Especially multi event games. Also has an app...",
         colour: "oklab(0.78 0.05 0.16)",
         dt_start: new Date('2024-03-18'),
+        paid: true,
         tech: [
             {name: "Python", stackType: "backend", primary: true},
             {name: "Flask", description: "Web framework", stackType: "backend"},
@@ -126,6 +128,7 @@ export const projects: ProjectsMap = {
         description: "Gives you money back from buying gift cards for use online and in-store",
         colour: "oklab(0.78 0.05 0.16)",
         dt_start: new Date('2024-07-02'),
+        paid: true,
         tech: [
             {name: "React Native", stackType: "frontend", primary: true},
             {name: "Expo", stackType: "backend", primary: true},
@@ -153,6 +156,7 @@ export const projects: ProjectsMap = {
         colour: "oklab(0.62 0.22 0.06)",
         dt_start: new Date('2023-06-27'),
         dt_end: new Date('2025-03-06'),
+        paid: true,
         tech: [
             {name: "React", stackType: "frontend", primary: true},
             {name: "Next.js", stackType: "frontend", primary: true},
@@ -186,6 +190,7 @@ export const projects: ProjectsMap = {
         colour: "oklab(0.7 -0.1 0.03)",
         dt_start: new Date('2022-06-27'),
         dt_end: new Date('2025-01-14'),
+        paid: true,
         tech: [
             {name: "React", stackType: "frontend", primary: true},
             {name: "JavaScript", stackType: "frontend"},
@@ -389,7 +394,7 @@ export const projects: ProjectsMap = {
 }
 
 export function randomProjects(count: number): [string, Project][] {
-    const entries = Object.entries(projects)
+    const entries = Object.entries(projects).filter(([, project]) => project.paid)
     for (let i = entries.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1))
         ;[entries[i], entries[j]] = [entries[j], entries[i]]

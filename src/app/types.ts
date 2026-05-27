@@ -11,6 +11,7 @@ export type Project = {
     dt_start: Date,
     dt_end?: Date,
     colour?: string,
+    paid?: boolean,
     tech?: Tech[],
     sidebar?: SidebarLink[],
     privacyNotice?: boolean,
