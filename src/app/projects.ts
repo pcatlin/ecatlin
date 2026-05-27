@@ -149,7 +149,7 @@ export const projects: ProjectsMap = {
     },
     "ohmydosh": {
         name: "OhMyDosh",
-        description: "A fun site, where users could earn dosh by taking offers. Never reached the lofty heights of Custard or Cashback.",
+        description: "OMD was a popular cashback site. Users could cashout by bank transfer or PayPal",
         colour: "oklab(0.62 0.22 0.06)",
         dt_start: new Date('2023-06-27'),
         dt_end: new Date('2025-03-06'),

@@ -11,7 +11,7 @@ export default function Home() {
         <main className="grow pt-8">
             <section className="mx-5 text-center mb-15">
                 <h1 className="flex flex-col text-5xl text-orange-500">Paul Catlin
-                    <span className="font-light text-3xl">Projects and Rememberings</span>
+                    <span className="font-light text-3xl">Software Engineer</span>
                 </h1>
             </section>
 
@@ -20,17 +20,28 @@ export default function Home() {
                     <div className="flex gap-5 items-center flex-col lg:flex-row">
                         <HomeCarousel/>
                         <div className="flex flex-col text-xl">
-                            <p>How’s it going? <span className="ps-2 text-2xl font-bold">I’m Paul.</span></p>
-                            <p>Welcome to a collection of my favourite projects with notes on how they were
-                                achieved!</p>
-                            <p>I’m always learning, experimenting and looking for better ways to build.
-                                This space will keep evolving along with me.</p>
+                            <p>I build and maintain production web applications using React, TypeScript and modern
+                                full-stack tools, with a focus
+                                on <strong>performance</strong>, <strong>accessibility</strong> and <strong>clean
+                                    system design</strong>.
+                            </p>
+
+                            <p>
+                                This site includes selected software engineering projects alongside creative and
+                                personal
+                                work that explores photography, experimentation and other interests.
+                            </p>
+
+                            <p>
+                                I’m always learning, building and refining how I approach both software and
+                                problem-solving.
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <FeaturedProjects />
+            <FeaturedProjects/>
 
             <section className="bg-slate-300 px-5 py-10">
                 <div className="mx-auto max-w-7xl">
