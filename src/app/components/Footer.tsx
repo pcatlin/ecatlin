@@ -37,6 +37,8 @@ export default function Footer() {
                 <ul className="flex flex-col text-center sm:text-start">
                     <li className="mb-3"><h2 className="font-bold uppercase tracking-wider text-orange-500">Sites</h2>
                     </li>
+                    <li><a href="https://www.sweepstakegenius.com" className={styles.linkSubtle + " block py-1 sm:py-0"}>Sweepstake Genius</a>
+                    </li>
                     <li><a href="https://www.travel-rates.com" className={styles.linkSubtle + " block py-1 sm:py-0"}>Travel Rates</a></li>
                     <li><a href="https://www.tickitreminders.com" className={styles.linkSubtle + " block py-1 sm:py-0"}>TickIt Reminders</a>
                     </li>
