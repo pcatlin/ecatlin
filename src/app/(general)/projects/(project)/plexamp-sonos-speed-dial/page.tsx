@@ -1,4 +1,5 @@
 import TechStack from "@/app/components/shared-features/TechStack";
+import {externalUrl} from "@/app/externalUrl";
 import {projectMetadata, projects} from "@/app/projects";
 import {Metadata} from "next";
 import styles from "@/app/styles";
@@ -94,11 +95,11 @@ export default function PlexampSonosSpeedDial() {
             </p>
             <p>
                 Integrations use{" "}
-                <a href="https://github.com/pkkid/python-plexapi" className={styles.link}>
+                <a href={externalUrl("https://github.com/pkkid/python-plexapi")} className={styles.link}>
                     python-plexapi
                 </a>{" "}
                 (Plex Media Server) and{" "}
-                <a href="https://github.com/SoCo/SoCo" className={styles.link}>
+                <a href={externalUrl("https://github.com/SoCo/SoCo")} className={styles.link}>
                     SoCo
                 </a>{" "}
                 (Sonos).

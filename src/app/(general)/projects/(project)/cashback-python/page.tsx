@@ -1,5 +1,6 @@
 import Link from "next/link"
 import AdminChangeLog from "@/app/components/shared-features/AdminChangeLog";
+import {externalUrl} from "@/app/externalUrl";
 import TechStack from "@/app/components/shared-features/TechStack";
 import {projects, projectMetadata} from "@/app/projects";
 import {Metadata} from "next";
@@ -72,7 +73,7 @@ export default function CashbackPython() {
                 to be as small as possible, which is vital for mobile use, where a nice fast wifi
                 network
                 connection is not always available.</p>
-            <p>I used <a href="https://squoosh.app" target="_blank"
+            <p>I used <a href={externalUrl("https://squoosh.app")} target="_blank"
                          className={styles.link}>squoosh.app</a> to
                 convert and compress the images to webp.
                 It is a nice site that shows the image quality and possible space savings that you can

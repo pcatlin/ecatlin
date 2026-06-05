@@ -1,3 +1,4 @@
+import {externalUrl} from "@/app/externalUrl";
 import styles from "@/app/styles";
 import Link from "next/link";
 
@@ -46,7 +47,7 @@ export default function PlayerPickerPrivacyNotice() {
                 Player Picker may use third-party services for in-app purchases and entitlement management, including:
             </p>
             <ul className="list-disc list-inside ml-5 mt-3 mb-3">
-                <li>RevenueCat (<a href="https://www.revenuecat.com/privacy"
+                <li>RevenueCat (<a href={externalUrl("https://www.revenuecat.com/privacy")}
                                    target="_blank" rel="noopener noreferrer" className={styles.link}>Privacy
                     Policy</a>)
                 </li>

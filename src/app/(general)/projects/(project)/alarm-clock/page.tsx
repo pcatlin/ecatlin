@@ -1,4 +1,5 @@
 import {Metadata} from "next";
+import {externalUrl} from "@/app/externalUrl";
 import {projectMetadata, projects} from "@/app/projects";
 import styles from "@/app/styles";
 import TechStack from "@/app/components/shared-features/TechStack";
@@ -60,12 +61,12 @@ export default function AlarmClock() {
                 To make this work, we need to add some required integrations to Home Assistant:
             </p>
             <ul className="ml-3 pl-5 mb-5 list-disc">
-                <li><a href="https://www.home-assistant.io/integrations/sonos/"
+                <li><a href={externalUrl("https://www.home-assistant.io/integrations/sonos/")}
                        className={styles.link}>Sonos</a> - To play radio on the Sonos speaker</li>
-                <li><a href="https://www.home-assistant.io/integrations/workday"
+                <li><a href={externalUrl("https://www.home-assistant.io/integrations/workday")}
                        className={styles.link}>Workday Sensor</a> - To prevent the alarm triggering on weekends
                     and bank holidays. Add your locale and exclude weekends and holidays</li>
-                <li><a href="https://www.home-assistant.io/integrations/google/"
+                <li><a href={externalUrl("https://www.home-assistant.io/integrations/google/")}
                        className={styles.link}>Google Calendar</a> - To be able to schedule date and time for
                     a bespoke alarm, or to prevent the alarm going off on a particular day or range of days.
                     In Google Calendar, create a new calendar just for your alarm clock.

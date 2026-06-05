@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import {externalUrl} from "@/app/externalUrl";
 import {sortedProjects} from "@/app/projects";
 import styles from "@/app/styles";
 
@@ -9,13 +10,13 @@ export default function Footer() {
                 <div className="flex flex-col items-center justify-center gap-3 justify-self-start">
                     <Link href="/"><h2 className="font-display text-3xl text-slate-300">eCatlin</h2></Link>
                     <ul className="flex gap-1">
-                        <li><a className="block py-1 sm:py-0" href="https://www.linkedin.com/in/paul-catlin-62a7983b6/"
+                        <li><a className="block py-1 sm:py-0" href={externalUrl("https://www.linkedin.com/in/paul-catlin-62a7983b6/")}
                                aria-label="LinkedIn"><i className="fa-brands fa-linkedin text-2xl"></i></a></li>
-                        <li><a className="block py-1 sm:py-0" href="https://github.com/pcatlin" aria-label="GitHub"><i
+                        <li><a className="block py-1 sm:py-0" href={externalUrl("https://github.com/pcatlin")} aria-label="GitHub"><i
                             className="fa-brands fa-github text-2xl"></i></a></li>
-                        <li><a className="block py-1 sm:py-0" href="https://www.youtube.com/@pcatlin"
+                        <li><a className="block py-1 sm:py-0" href={externalUrl("https://www.youtube.com/@pcatlin")}
                                aria-label="YouTube"><i className="fa-brands fa-youtube text-2xl"></i></a></li>
-                        <li><a className="block py-1 sm:py-0" href="https://www.instagram.com/reinstall/"
+                        <li><a className="block py-1 sm:py-0" href={externalUrl("https://www.instagram.com/reinstall/")}
                                aria-label="Instagram"><i className="fa-brands fa-instagram text-2xl"></i></a></li>
                     </ul>
                 </div>
@@ -37,10 +38,10 @@ export default function Footer() {
                 <ul className="flex flex-col text-center sm:text-start">
                     <li className="mb-3"><h2 className="font-bold uppercase tracking-wider text-orange-500">Sites</h2>
                     </li>
-                    <li><a href="https://www.sweepstakegenius.com" className={styles.linkSubtle + " block py-1 sm:py-0"}>Sweepstake Genius</a>
+                    <li><a href={externalUrl("https://www.sweepstakegenius.com")} className={styles.linkSubtle + " block py-1 sm:py-0"}>Sweepstake Genius</a>
                     </li>
-                    <li><a href="https://www.travel-rates.com" className={styles.linkSubtle + " block py-1 sm:py-0"}>Travel Rates</a></li>
-                    <li><a href="https://www.tickitreminders.com" className={styles.linkSubtle + " block py-1 sm:py-0"}>TickIt Reminders</a>
+                    <li><a href={externalUrl("https://www.travel-rates.com")} className={styles.linkSubtle + " block py-1 sm:py-0"}>Travel Rates</a></li>
+                    <li><a href={externalUrl("https://www.tickitreminders.com")} className={styles.linkSubtle + " block py-1 sm:py-0"}>TickIt Reminders</a>
                     </li>
                 </ul>
 

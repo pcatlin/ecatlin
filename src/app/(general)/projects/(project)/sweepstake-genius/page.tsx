@@ -1,4 +1,5 @@
 import TechStack from "@/app/components/shared-features/TechStack";
+import {externalUrl} from "@/app/externalUrl";
 import {projectMetadata, projects} from "@/app/projects";
 import {Metadata} from "next";
 import styles from "@/app/styles";
@@ -34,7 +35,7 @@ export default function SweepstakeGenius() {
             </p>
             <p>
                 Live at{" "}
-                <a href="https://www.sweepstakegenius.com" className={styles.link} target="_blank">
+                <a href={externalUrl("https://www.sweepstakegenius.com")} className={styles.link} target="_blank" rel="noopener noreferrer">
                     sweepstakegenius.com
                 </a>
                 .

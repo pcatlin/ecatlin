@@ -1,6 +1,7 @@
 'use client';
 
 import {useSelectedLayoutSegment} from "next/navigation";
+import {externalUrl} from "@/app/externalUrl";
 import {projects} from "@/app/projects";
 import styles from "@/app/styles";
 
@@ -24,7 +25,7 @@ export default function ProjectDates() {
             {project.github ? (
                 <>
                     <a
-                        href={project.github}
+                        href={externalUrl(project.github)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className="text-accent inline-flex items-center gap-2 text-base"
@@ -32,7 +33,7 @@ export default function ProjectDates() {
                         <i className="fa-brands fa-github text-xl" aria-hidden="true"></i>
                     </a>
                     <a
-                        href={project.github}
+                        href={externalUrl(project.github)}
                         target="_blank"
                         rel="noopener noreferrer"
                         className={`${styles.link} inline-flex items-center gap-2 text-base`}
