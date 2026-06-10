@@ -1,14 +1,60 @@
 import FeaturedProjects from "@/app/components/FeaturedProjects";
 import HomeCarousel from "@/app/components/HomeCarousel";
+import JsonLd from "@/app/components/JsonLd";
 import RecentProjects from "@/app/components/RecentProjects";
+import {PERSON_SAME_AS, SITE_DESCRIPTION, SITE_NAME, SITE_URL} from "@/app/site";
+import type {Metadata} from "next";
 import Link from "next/link";
 import styles from "@/app/styles";
 
 export const dynamic = "force-dynamic";
 
+export const metadata: Metadata = {
+    title: "Paul Catlin — Software Engineer",
+    description: SITE_DESCRIPTION,
+    alternates: {
+        canonical: "/",
+    },
+};
+
+const homeJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+        {
+            "@type": "WebSite",
+            "@id": `${SITE_URL}/#website`,
+            name: SITE_NAME,
+            url: SITE_URL,
+            description: SITE_DESCRIPTION,
+            inLanguage: "en-GB",
+            author: {"@id": `${SITE_URL}/#person`},
+        },
+        {
+            "@type": "Person",
+            "@id": `${SITE_URL}/#person`,
+            name: "Paul Catlin",
+            url: SITE_URL,
+            jobTitle: "Software Engineer",
+            description: SITE_DESCRIPTION,
+            sameAs: [...PERSON_SAME_AS],
+        },
+        {
+            "@type": "WebPage",
+            "@id": `${SITE_URL}/#webpage`,
+            url: SITE_URL,
+            name: "Paul Catlin — Software Engineer",
+            description: SITE_DESCRIPTION,
+            isPartOf: {"@id": `${SITE_URL}/#website`},
+            about: {"@id": `${SITE_URL}/#person`},
+            inLanguage: "en-GB",
+        },
+    ],
+};
+
 export default function Home() {
     return (
         <main className="grow pt-8">
+            <JsonLd data={homeJsonLd}/>
             <section className="mx-5 text-center mb-15">
                 <h1 className="flex flex-col text-5xl text-orange-500">Paul Catlin
                     <span className="font-light text-3xl">Software Engineer</span>

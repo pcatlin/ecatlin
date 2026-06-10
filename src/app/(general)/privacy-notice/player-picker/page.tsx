@@ -1,6 +1,22 @@
 import {externalUrl} from "@/app/externalUrl";
+import {projectMetadata} from "@/app/projects";
 import styles from "@/app/styles";
+import type {Metadata} from "next";
 import Link from "next/link";
+
+export function generateMetadata(): Metadata {
+    const base = projectMetadata("player-picker");
+
+    return {
+        ...base,
+        title: "Player Picker Privacy Notice",
+        description:
+            "How the Player Picker app collects, uses, and stores information, including purchases and third-party services.",
+        alternates: {
+            canonical: "/privacy-notice/player-picker",
+        },
+    };
+}
 
 export default function PlayerPickerPrivacyNotice() {
     return (

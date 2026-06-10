@@ -19,19 +19,26 @@ export function sortedProjects(limit?: number) {
 
 export function projectMetadata(slug: string): Metadata {
     const project = projects[slug]
+    const path = `/projects/${slug}`
+
     return {
-        title: `${project.name} | eCatlin`,
+        title: project.name,
         description: project.description,
+        alternates: {
+            canonical: path,
+        },
         openGraph: {
             title: project.name,
             description: project.description,
-            url: `https://www.ecatlin.com/projects/${slug}`,
+            url: path,
             type: "article",
+            images: [{url: `/images/${slug}/logo.png`, alt: `${project.name} logo`}],
         },
         twitter: {
             card: "summary",
             title: project.name,
             description: project.description,
+            images: [`/images/${slug}/logo.png`],
         },
     }
 }

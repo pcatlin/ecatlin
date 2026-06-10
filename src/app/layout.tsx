@@ -5,6 +5,7 @@ import {Geist, Geist_Mono} from "next/font/google"
 import Script from "next/script";
 import "./globals.css"
 import Footer from "@/app/components/Footer";
+import {SITE_DESCRIPTION, SITE_NAME, SITE_URL} from "@/app/site";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -17,15 +18,37 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-    metadataBase: new URL("https://www.ecatlin.com"),
-    title: "eCatlin",
-    description: "Showcasing the projects and work of Paul Catlin, along with some top tips along the way",
+    metadataBase: new URL(SITE_URL),
+    title: {
+        default: "Paul Catlin — Software Engineer",
+        template: `%s | ${SITE_NAME}`,
+    },
+    description: SITE_DESCRIPTION,
+    alternates: {
+        canonical: "/",
+    },
+    robots: {
+        index: true,
+        follow: true,
+        googleBot: {
+            index: true,
+            follow: true,
+        },
+    },
     openGraph: {
-        siteName: "eCatlin",
+        siteName: SITE_NAME,
         type: "website",
+        locale: "en_GB",
+        url: SITE_URL,
+        title: "Paul Catlin — Software Engineer",
+        description: SITE_DESCRIPTION,
+        images: [{url: "/icon.png", alt: SITE_NAME}],
     },
     twitter: {
         card: "summary",
+        title: "Paul Catlin — Software Engineer",
+        description: SITE_DESCRIPTION,
+        images: ["/icon.png"],
     },
 }
 

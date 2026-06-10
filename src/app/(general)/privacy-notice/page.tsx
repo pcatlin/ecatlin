@@ -1,6 +1,19 @@
 import {projects} from "@/app/projects";
+import type {Metadata} from "next";
 import Link from "next/link";
 import styles from "@/app/styles";
+
+export const metadata: Metadata = {
+    title: "Privacy Notices",
+    description: "Privacy notices for Paul Catlin's apps and software projects.",
+    alternates: {
+        canonical: "/privacy-notice",
+    },
+    robots: {
+        index: true,
+        follow: true,
+    },
+};
 
 export default function PrivacyNotice() {
     const projectsWithPrivacyNotice = Object.entries(projects).filter(([, project]) => project.privacyNotice)

@@ -1,5 +1,19 @@
 import {sortedProjects} from "@/app/projects";
 import ProjectCard from "@/app/components/ProjectCard";
+import type {Metadata} from "next";
+
+export const metadata: Metadata = {
+    title: "Projects",
+    description:
+        "Software engineering projects by Paul Catlin — production web apps, mobile apps, self-hosted tools, and home automation.",
+    alternates: {
+        canonical: "/projects",
+    },
+    openGraph: {
+        title: "Projects",
+        url: "/projects",
+    },
+};
 
 export default function Projects() {
     return (
