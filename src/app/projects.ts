@@ -283,6 +283,7 @@ export const projects: ProjectsMap = {
         description: "Lets us set a schedule to turn on the tap to water the garden",
         colour: "oklab(0.8 -0.09 0.16)",
         dt_start: new Date('2023-05-31'),
+        dt_end: new Date('2023-08-01'),
         tech: [
             {name: "Home Assistant", primary: true},
             {name: "Plumbing", primary: true},
@@ -403,7 +404,7 @@ export const projects: ProjectsMap = {
         description: "Self-hosted app to find tracks in your Plex library and build playlists fast—from search, Spotify, AI, or CSV.",
         colour: "oklch(0.62 0.16 250)",
         dt_start: new Date('2026-05-20'),
-        dt_end: new Date('2026-05-27'),
+        dt_end: new Date('2026-06-01'),
         github: "https://github.com/pcatlin/plex-playlist-tool",
         tech: [
             {name: "Vue 3", stackType: "frontend", primary: true},
@@ -455,14 +456,12 @@ export const projects: ProjectsMap = {
             {name: "Testing Library", stackType: "frontend"},
             {name: "NestJS", stackType: "backend", primary: true},
             {name: "Node.js", stackType: "backend", primary: true},
-            {name: "TypeORM", stackType: "backend"},
             {name: "PostgreSQL", stackType: "backend", primary: true},
             {name: "Supabase", stackType: "infrastructure", description: "Production database"},
             {name: "Vercel", stackType: "infrastructure", primary: true},
             {name: "Render", stackType: "infrastructure", description: "API hosting"},
-            {name: "Docker Compose", stackType: "infrastructure", description: "Local Postgres"},
-            {name: "npm workspaces", stackType: "tools"},
-            {name: "Google AdSense", stackType: "tools"},
+            {name: "Docker", stackType: "infrastructure"},
+            {name: "npm", stackType: "tools"},
             {name: "Cursor", stackType: "tools", description: "AI-assisted development"},
         ],
         sidebar: [
