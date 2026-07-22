@@ -1,4 +1,3 @@
-import Link from "next/link";
 import TechStack from "@/app/components/shared-features/TechStack";
 import {projectMetadata, projects} from "@/app/projects";
 import {Metadata} from "next";
