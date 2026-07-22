@@ -380,12 +380,10 @@ export const projects: ProjectsMap = {
             {name: "PostgreSQL", stackType: "backend", primary: true},
             {name: "python-plexapi", stackType: "backend", description: "Plex Media Server"},
             {name: "SoCo", stackType: "backend", description: "Sonos"},
-            {name: "httpx", stackType: "backend", description: "Plexamp companion API"},
             {name: "OpenAPI", stackType: "tools", description: "Swagger at /docs"},
             {name: "Docker Compose", stackType: "infrastructure"},
             {name: "nginx", stackType: "infrastructure", description: "Static UI + reverse proxy"},
             {name: "pytest", stackType: "backend", description: "Backend testing"},
-            {name: "pytest-asyncio", stackType: "backend"},
         ],
         sidebar: [
             {href: "#what-is-it", label: "What is Plexamp Sonos Speed Dial?"},

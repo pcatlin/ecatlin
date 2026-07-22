@@ -35,8 +35,7 @@ export default function PlexampSonosSpeedDial() {
             </p>
             <p>
                 The stack is API-first (FastAPI + OpenAPI), with a React single-page UI served behind nginx in Docker.
-                Configuration (Plex URL, OAuth token, Sonos discovery, per-player line-in) lives in Postgres and is
-                edited through an in-app <strong>Setup</strong> modal.
+                Configuration (Plex URL, OAuth token, Sonos discovery, per-player line-in) lives in Postgres.
             </p>
 
             <h2 className={styles.h2} id="plexamp-sonos-line-in">Plexamp → Sonos via Line-In</h2>
